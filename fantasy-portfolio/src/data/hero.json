@@ -1,0 +1,23 @@
+{
+  "name": "Tu Nombre",
+  "title": "Full Stack Developer & Data Analyst",
+  "class": "⚔️ Code Wizard",
+  "level": 12,
+  "avatar": "https://api.dicebear.com/7.x/pixel-art/svg?seed=hero&backgroundColor=b6e3f4",
+  "bio": "Aventurero del código con pasión por construir experiencias web épicas y descubrir tesoros ocultos en los datos. Especializado en transformar requisitos complejos en soluciones elegantes.",
+  "location": "📍 Ciudad, País",
+  "email": "tu@email.com",
+  "availableForHire": true,
+  "social": {
+    "github": "https://github.com/tu-usuario",
+    "linkedin": "https://linkedin.com/in/tu-usuario",
+    "twitter": "https://twitter.com/tu-usuario",
+    "portfolio": "https://tu-portfolio.com"
+  },
+  "stats": {
+    "projectsCompleted": 42,
+    "yearsExperience": 4,
+    "technologiesMastered": 15,
+    "coffeeConsumed": 9999
+  }
+}

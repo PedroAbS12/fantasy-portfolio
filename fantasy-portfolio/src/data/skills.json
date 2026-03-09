@@ -1,0 +1,50 @@
+{
+  "categories": [
+    {
+      "id": "web",
+      "name": "⚔️ Web Development",
+      "icon": "bi-code-slash",
+      "color": "gold",
+      "skills": [
+        { "name": "Vue.js",        "level": 90, "type": "gold",   "icon": "🟢" },
+        { "name": "JavaScript",    "level": 88, "type": "gold",   "icon": "🟡" },
+        { "name": "React",         "level": 75, "type": "gold",   "icon": "🔵" },
+        { "name": "HTML / CSS",    "level": 95, "type": "gold",   "icon": "🟠" },
+        { "name": "Node.js",       "level": 72, "type": "cyan",   "icon": "🟢" },
+        { "name": "Bootstrap",     "level": 85, "type": "cyan",   "icon": "🟣" },
+        { "name": "TypeScript",    "level": 65, "type": "cyan",   "icon": "🔵" },
+        { "name": "REST APIs",     "level": 82, "type": "gold",   "icon": "🔗" }
+      ]
+    },
+    {
+      "id": "data",
+      "name": "🔮 Data Analysis",
+      "icon": "bi-graph-up",
+      "color": "cyan",
+      "skills": [
+        { "name": "Python",        "level": 92, "type": "cyan",   "icon": "🐍" },
+        { "name": "Pandas",        "level": 88, "type": "cyan",   "icon": "📊" },
+        { "name": "SQL",           "level": 85, "type": "green",  "icon": "🗄️" },
+        { "name": "Power BI",      "level": 78, "type": "green",  "icon": "📈" },
+        { "name": "Matplotlib",    "level": 80, "type": "cyan",   "icon": "📉" },
+        { "name": "Machine Learning","level": 60,"type": "purple", "icon": "🤖" },
+        { "name": "Tableau",       "level": 70, "type": "green",  "icon": "📋" },
+        { "name": "Excel Avanzado","level": 88, "type": "green",  "icon": "📗" }
+      ]
+    },
+    {
+      "id": "tools",
+      "name": "🛠️ Herramientas",
+      "icon": "bi-tools",
+      "color": "purple",
+      "skills": [
+        { "name": "Git / GitHub",  "level": 90, "type": "gold",   "icon": "🐙" },
+        { "name": "Docker",        "level": 65, "type": "cyan",   "icon": "🐳" },
+        { "name": "PostgreSQL",    "level": 80, "type": "green",  "icon": "🐘" },
+        { "name": "MongoDB",       "level": 70, "type": "green",  "icon": "🍃" },
+        { "name": "Figma",         "level": 72, "type": "purple", "icon": "🎨" },
+        { "name": "Linux",         "level": 75, "type": "cyan",   "icon": "🐧" }
+      ]
+    }
+  ]
+}

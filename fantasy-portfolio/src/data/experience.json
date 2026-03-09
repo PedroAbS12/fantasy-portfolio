@@ -1,0 +1,80 @@
+{
+  "experience": [
+    {
+      "id": 1,
+      "role": "Full Stack Developer",
+      "company": "Empresa Épica S.A.",
+      "period": "2022 - Presente",
+      "type": "work",
+      "icon": "⚔️",
+      "description": "Desarrollo de aplicaciones web con Vue.js y Node.js. Liderazgo técnico de equipo de 3 desarrolladores. Implementación de pipelines CI/CD y arquitectura de microservicios.",
+      "achievements": [
+        "Reducción de 40% en tiempo de carga de aplicaciones",
+        "Migración exitosa de sistema legacy a Vue 3",
+        "Implementación de suite de pruebas con 85% cobertura"
+      ],
+      "tech": ["Vue.js", "Node.js", "PostgreSQL", "Docker"]
+    },
+    {
+      "id": 2,
+      "role": "Data Analyst",
+      "company": "Data Kingdom Corp",
+      "period": "2020 - 2022",
+      "type": "work",
+      "icon": "🔮",
+      "description": "Análisis de datos para área comercial y finanzas. Construcción de dashboards en Power BI y automatización de reportes con Python.",
+      "achievements": [
+        "Ahorro de 20hrs/semana mediante automatización de reportes",
+        "Dashboard adoptado por toda la organización (500+ usuarios)",
+        "Modelo predictivo con 89% de precisión para forecast de ventas"
+      ],
+      "tech": ["Python", "SQL", "Power BI", "Excel"]
+    },
+    {
+      "id": 3,
+      "role": "Junior Web Developer",
+      "company": "StartUp Dungeon",
+      "period": "2019 - 2020",
+      "type": "work",
+      "icon": "🗡️",
+      "description": "Desarrollo frontend con React y mantenimiento de APIs REST. Primera aventura profesional en el mundo del desarrollo.",
+      "achievements": [
+        "Desarrollo de landing pages con +95 score en Lighthouse",
+        "Integración con APIs de terceros (Stripe, Twilio)",
+        "Primer deploy a producción de aplicación crítica"
+      ],
+      "tech": ["React", "JavaScript", "CSS", "MySQL"]
+    }
+  ],
+  "education": [
+    {
+      "id": 4,
+      "role": "Ingeniería en Sistemas / Computación",
+      "company": "Universidad del Reino",
+      "period": "2015 - 2019",
+      "type": "education",
+      "icon": "📜",
+      "description": "Formación en ciencias de la computación, algoritmos, bases de datos y desarrollo de software.",
+      "achievements": [
+        "Titulado con mención honorífica",
+        "Proyecto de tesis: Sistema de recomendación con ML",
+        "Representante de generación"
+      ],
+      "tech": ["Java", "C++", "Algoritmos", "BD"]
+    },
+    {
+      "id": 5,
+      "role": "Certificación Data Science",
+      "company": "Online Academy of Wizards",
+      "period": "2021",
+      "type": "certification",
+      "icon": "🏆",
+      "description": "Bootcamp intensivo de 6 meses en ciencia de datos, machine learning y visualización.",
+      "achievements": [
+        "Top 5% del cohorte",
+        "Proyecto final: Análisis de sentimientos en redes sociales"
+      ],
+      "tech": ["Python", "TensorFlow", "NLP", "Tableau"]
+    }
+  ]
+}

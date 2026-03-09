@@ -1,0 +1,10 @@
+{
+  "brand": "⚔️ DEV.QUEST",
+  "items": [
+    { "id": "hero",       "label": "Inicio",      "icon": "bi-house-fill",    "emoji": "🏰" },
+    { "id": "skills",     "label": "Habilidades",  "icon": "bi-lightning-fill", "emoji": "⚡" },
+    { "id": "projects",   "label": "Proyectos",    "icon": "bi-grid-fill",     "emoji": "🗺️" },
+    { "id": "experience", "label": "Experiencia",  "icon": "bi-clock-history", "emoji": "📜" },
+    { "id": "contact",    "label": "Contacto",     "icon": "bi-envelope-fill", "emoji": "📨" }
+  ]
+}

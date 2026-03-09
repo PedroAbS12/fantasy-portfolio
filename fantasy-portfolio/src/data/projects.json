@@ -1,0 +1,112 @@
+{
+  "featured": [
+    {
+      "id": 1,
+      "title": "Dragon Dashboard",
+      "subtitle": "Sistema de Analítica Web",
+      "description": "Dashboard interactivo con visualizaciones en tiempo real para análisis de métricas de negocio. Integración con múltiples fuentes de datos y exportación de reportes automáticos.",
+      "category": "data",
+      "status": "completed",
+      "difficulty": "legendary",
+      "image": "https://placehold.co/600x340/1a1a3e/ffd700?text=Dragon+Dashboard&font=raleway",
+      "tags": ["Python", "Pandas", "Plotly", "FastAPI", "Vue.js"],
+      "links": {
+        "live": "https://demo.tu-portfolio.com/dashboard",
+        "github": "https://github.com/tu-usuario/dragon-dashboard",
+        "video": ""
+      },
+      "year": 2024,
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Quest Shop",
+      "subtitle": "E-commerce Full Stack",
+      "description": "Plataforma de comercio electrónico completa con carrito de compras, autenticación JWT, pasarela de pagos y panel de administración. Arquitectura REST con Vue 3 + Node.js.",
+      "category": "web",
+      "status": "completed",
+      "difficulty": "epic",
+      "image": "https://placehold.co/600x340/1a1a3e/00ccff?text=Quest+Shop&font=raleway",
+      "tags": ["Vue.js", "Node.js", "PostgreSQL", "Bootstrap", "Stripe"],
+      "links": {
+        "live": "https://demo.tu-portfolio.com/shop",
+        "github": "https://github.com/tu-usuario/quest-shop",
+        "video": "https://youtube.com/watch?v=example"
+      },
+      "year": 2024,
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Mage Analytics",
+      "subtitle": "Análisis Predictivo con ML",
+      "description": "Modelo de machine learning para predicción de churn de clientes con interfaz web para visualización de resultados, segmentación y exportación de insights accionables.",
+      "category": "data",
+      "status": "completed",
+      "difficulty": "epic",
+      "image": "https://placehold.co/600x340/1a1a3e/ff44aa?text=Mage+Analytics&font=raleway",
+      "tags": ["Python", "Scikit-learn", "Streamlit", "SQL", "Docker"],
+      "links": {
+        "live": "",
+        "github": "https://github.com/tu-usuario/mage-analytics",
+        "video": ""
+      },
+      "year": 2023,
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "Hero Tracker",
+      "subtitle": "App de Gestión de Proyectos",
+      "description": "Aplicación de gestión de tareas con tablero Kanban, sistema de notificaciones, colaboración en tiempo real vía WebSockets y reportes de productividad.",
+      "category": "web",
+      "status": "completed",
+      "difficulty": "rare",
+      "image": "https://placehold.co/600x340/1a1a3e/00cc66?text=Hero+Tracker&font=raleway",
+      "tags": ["Vue.js", "Socket.io", "MongoDB", "Express", "Tailwind"],
+      "links": {
+        "live": "https://demo.tu-portfolio.com/tracker",
+        "github": "https://github.com/tu-usuario/hero-tracker",
+        "video": ""
+      },
+      "year": 2023,
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Lore Reports",
+      "subtitle": "Power BI / Tableau Dashboards",
+      "description": "Colección de dashboards de Business Intelligence para retail y finanzas. Análisis de ventas, inventario, márgenes y KPIs estratégicos con actualizaciones automáticas.",
+      "category": "data",
+      "status": "completed",
+      "difficulty": "rare",
+      "image": "https://placehold.co/600x340/1a1a3e/ff9900?text=Lore+Reports&font=raleway",
+      "tags": ["Power BI", "SQL", "Excel", "DAX", "ETL"],
+      "links": {
+        "live": "",
+        "github": "",
+        "video": "https://youtube.com/watch?v=example2"
+      },
+      "year": 2023,
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Pixel CMS",
+      "subtitle": "Gestor de Contenido Headless",
+      "description": "CMS headless con API GraphQL, editor de texto enriquecido, gestión de medios y sistema de roles. Panel de administración construido en Vue con preview en tiempo real.",
+      "category": "web",
+      "status": "in-progress",
+      "difficulty": "uncommon",
+      "image": "https://placehold.co/600x340/1a1a3e/4a2a8e?text=Pixel+CMS&font=raleway",
+      "tags": ["Vue.js", "GraphQL", "Node.js", "SQLite"],
+      "links": {
+        "live": "",
+        "github": "https://github.com/tu-usuario/pixel-cms",
+        "video": ""
+      },
+      "year": 2024,
+      "featured": false
+    }
+  ]
+}
