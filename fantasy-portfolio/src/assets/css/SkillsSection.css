@@ -1,0 +1,60 @@
+/* ============================================
+   SKILLSSECTION.CSS
+   ============================================ */
+
+.title-prefix { color: var(--pixel-cyan); }
+
+.active-tab {
+  background: var(--pixel-gold) !important;
+  color: var(--pixel-dark) !important;
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--pixel-gold-dark) !important;
+}
+
+.skill-card { animation: slide-up 0.5s ease both; }
+
+.skill-category-title {
+  font-size: 0.65rem;
+  color: var(--pixel-cyan);
+  border-bottom: 2px solid var(--pixel-border);
+  padding-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.skill-row { animation: slide-up 0.4s ease both; }
+
+.skill-name  { font-family: var(--font-retro); font-size: 1.1rem; color: var(--pixel-white); }
+.skill-emoji { font-size: 1rem; }
+
+.skill-level {
+  font-family: var(--font-pixel);
+  font-size: 0.4rem;
+  min-width: 40px;
+  text-align: right;
+}
+.level-gold   { color: var(--pixel-gold);   }
+.level-cyan   { color: var(--pixel-cyan);   }
+.level-green  { color: var(--pixel-green);  }
+.level-purple { color: var(--pixel-violet); }
+
+.bar-markers { position: absolute; inset: 0; pointer-events: none; }
+.bar-marker  { position: absolute; top: 0; bottom: 0; width: 1px; background: rgba(255,255,255,0.1); }
+
+.xp-bar-wrap { position: relative; }
+
+.xp-bar-fill.bar-purple {
+  background: linear-gradient(90deg, #2a0a5e, var(--pixel-violet));
+  box-shadow: 0 0 8px var(--pixel-violet);
+}
+
+/* ── Legend ── */
+.legend-item  { display: flex; align-items: center; gap: 8px; }
+.legend-bar   { width: 30px; height: 8px; }
+.legend-label { font-family: var(--font-pixel); font-size: 0.4rem; color: var(--pixel-gray); }
+
+/* ── Transitions ── */
+.skills-fade-enter-active { transition: all 0.3s ease; }
+.skills-fade-leave-active { transition: all 0.2s ease; }
+.skills-fade-enter-from   { opacity: 0; transform: translateY(20px);  }
+.skills-fade-leave-to     { opacity: 0; transform: translateY(-20px); }

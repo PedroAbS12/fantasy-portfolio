@@ -2,17 +2,17 @@
   "featured": [
     {
       "id": 1,
-      "title": "Dragon Dashboard",
-      "subtitle": "Sistema de Analítica Web",
-      "description": "Dashboard interactivo con visualizaciones en tiempo real para análisis de métricas de negocio. Integración con múltiples fuentes de datos y exportación de reportes automáticos.",
+      "title": "Modelo de IA para Reconocimiento de Señales",
+      "subtitle": "Clasificación de Señales con Machine Learning",
+      "description": "Proyecto de aprendizaje automático desarrollado en colaboración con Belkin y la Universidad de Twente para clasificar señales eléctricas trifásicas utilizando arquitecturas de redes neuronales.",
       "category": "data",
-      "status": "completed",
-      "difficulty": "legendary",
-      "image": "https://placehold.co/600x340/1a1a3e/ffd700?text=Dragon+Dashboard&font=raleway",
-      "tags": ["Python", "Pandas", "Plotly", "FastAPI", "Vue.js"],
+      "status": "completado",
+      "difficulty": "avanzado",
+      "image": "/src/assets/pictures/señales.png",
+      "tags": ["Python", "Machine Learning", "CNN", "MLP", "Series de Tiempo"],
       "links": {
-        "live": "https://demo.tu-portfolio.com/dashboard",
-        "github": "https://github.com/tu-usuario/dragon-dashboard",
+        "live": "",
+        "github": "",
         "video": ""
       },
       "year": 2024,
@@ -20,35 +20,35 @@
     },
     {
       "id": 2,
-      "title": "Quest Shop",
-      "subtitle": "E-commerce Full Stack",
-      "description": "Plataforma de comercio electrónico completa con carrito de compras, autenticación JWT, pasarela de pagos y panel de administración. Arquitectura REST con Vue 3 + Node.js.",
-      "category": "web",
-      "status": "completed",
-      "difficulty": "epic",
-      "image": "https://placehold.co/600x340/1a1a3e/00ccff?text=Quest+Shop&font=raleway",
-      "tags": ["Vue.js", "Node.js", "PostgreSQL", "Bootstrap", "Stripe"],
+      "title": "Sistema Distribuido del Juego Dots and Boxes",
+      "subtitle": "Arquitectura de Servidor Multijugador",
+      "description": "Sistema multijugador distribuido que implementa comunicación cliente-servidor y manejo de mensajes utilizando procesamiento multihilo.",
+      "category": "backend",
+      "status": "completado",
+      "difficulty": "avanzado",
+      "image": "/src/assets/pictures/dots-boxes.png",
+      "tags": ["Java", "POO", "Multihilo", "Arquitectura de Servidor"],
       "links": {
-        "live": "https://demo.tu-portfolio.com/shop",
-        "github": "https://github.com/tu-usuario/quest-shop",
-        "video": "https://youtube.com/watch?v=example"
+        "live": "",
+        "github": "",
+        "video": ""
       },
       "year": 2024,
       "featured": true
     },
     {
       "id": 3,
-      "title": "Mage Analytics",
-      "subtitle": "Análisis Predictivo con ML",
-      "description": "Modelo de machine learning para predicción de churn de clientes con interfaz web para visualización de resultados, segmentación y exportación de insights accionables.",
-      "category": "data",
-      "status": "completed",
-      "difficulty": "epic",
-      "image": "https://placehold.co/600x340/1a1a3e/ff44aa?text=Mage+Analytics&font=raleway",
-      "tags": ["Python", "Scikit-learn", "Streamlit", "SQL", "Docker"],
+      "title": "Sistema de Detección de Defectos en Cerámica",
+      "subtitle": "Inspección Industrial con Visión por Computadora",
+      "description": "Sistema de visión por computadora desarrollado para detectar imperfecciones en productos cerámicos utilizando técnicas de procesamiento de imágenes y clasificación.",
+      "category": "ai",
+      "status": "completado",
+      "difficulty": "avanzado",
+      "image": "/src/assets/pictures/computer-vision.png",
+      "tags": ["Visión por Computadora", "Python", "Procesamiento de Imágenes"],
       "links": {
         "live": "",
-        "github": "https://github.com/tu-usuario/mage-analytics",
+        "github": "",
         "video": ""
       },
       "year": 2023,
@@ -56,56 +56,20 @@
     },
     {
       "id": 4,
-      "title": "Hero Tracker",
-      "subtitle": "App de Gestión de Proyectos",
-      "description": "Aplicación de gestión de tareas con tablero Kanban, sistema de notificaciones, colaboración en tiempo real vía WebSockets y reportes de productividad.",
-      "category": "web",
-      "status": "completed",
-      "difficulty": "rare",
-      "image": "https://placehold.co/600x340/1a1a3e/00cc66?text=Hero+Tracker&font=raleway",
-      "tags": ["Vue.js", "Socket.io", "MongoDB", "Express", "Tailwind"],
-      "links": {
-        "live": "https://demo.tu-portfolio.com/tracker",
-        "github": "https://github.com/tu-usuario/hero-tracker",
-        "video": ""
-      },
-      "year": 2023,
-      "featured": false
-    },
-    {
-      "id": 5,
-      "title": "Lore Reports",
-      "subtitle": "Power BI / Tableau Dashboards",
-      "description": "Colección de dashboards de Business Intelligence para retail y finanzas. Análisis de ventas, inventario, márgenes y KPIs estratégicos con actualizaciones automáticas.",
-      "category": "data",
-      "status": "completed",
-      "difficulty": "rare",
-      "image": "https://placehold.co/600x340/1a1a3e/ff9900?text=Lore+Reports&font=raleway",
-      "tags": ["Power BI", "SQL", "Excel", "DAX", "ETL"],
+      "title": "Simulación de Movimiento Robótico",
+      "subtitle": "Simulación con Vectores 3D",
+      "description": "Simulación del movimiento de un robot utilizando vectores 3D para el control de articulaciones y análisis de trayectorias.",
+      "category": "engineering",
+      "status": "completado",
+      "difficulty": "intermedio",
+      "image": "/src/assets/pictures/robo_dk.png",
+      "tags": ["MATLAB", "Python", "Vectores", "RoboDK"],
       "links": {
         "live": "",
         "github": "",
-        "video": "https://youtube.com/watch?v=example2"
-      },
-      "year": 2023,
-      "featured": false
-    },
-    {
-      "id": 6,
-      "title": "Pixel CMS",
-      "subtitle": "Gestor de Contenido Headless",
-      "description": "CMS headless con API GraphQL, editor de texto enriquecido, gestión de medios y sistema de roles. Panel de administración construido en Vue con preview en tiempo real.",
-      "category": "web",
-      "status": "in-progress",
-      "difficulty": "uncommon",
-      "image": "https://placehold.co/600x340/1a1a3e/4a2a8e?text=Pixel+CMS&font=raleway",
-      "tags": ["Vue.js", "GraphQL", "Node.js", "SQLite"],
-      "links": {
-        "live": "",
-        "github": "https://github.com/tu-usuario/pixel-cms",
         "video": ""
       },
-      "year": 2024,
+      "year": 2023,
       "featured": false
     }
   ]

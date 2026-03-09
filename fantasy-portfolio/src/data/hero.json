@@ -1,23 +1,21 @@
 {
-  "name": "Tu Nombre",
+  "name": "PEDRO ABAROA",
   "title": "Full Stack Developer & Data Analyst",
   "class": "⚔️ Code Wizard",
-  "level": 12,
-  "avatar": "https://api.dicebear.com/7.x/pixel-art/svg?seed=hero&backgroundColor=b6e3f4",
+  "level": 24,
+  "avatar": "/src/assets/pictures/profile-picture.png",
   "bio": "Aventurero del código con pasión por construir experiencias web épicas y descubrir tesoros ocultos en los datos. Especializado en transformar requisitos complejos en soluciones elegantes.",
-  "location": "📍 Ciudad, País",
-  "email": "tu@email.com",
+  "location": "📍 CDMX, MÉXICO",
+  "email": "pedro.abaroa.amj@gmail.com",
   "availableForHire": true,
   "social": {
-    "github": "https://github.com/tu-usuario",
-    "linkedin": "https://linkedin.com/in/tu-usuario",
-    "twitter": "https://twitter.com/tu-usuario",
-    "portfolio": "https://tu-portfolio.com"
+    "github": "https://github.com/PedroAbS12",
+    "linkedin": "www.linkedin.com/in/pedro-abaroa-imt"
   },
   "stats": {
-    "projectsCompleted": 42,
-    "yearsExperience": 4,
-    "technologiesMastered": 15,
+    "projectsCompleted": 9,
+    "yearsExperience": 2,
+    "technologiesMastered": 5,
     "coffeeConsumed": 9999
   }
 }

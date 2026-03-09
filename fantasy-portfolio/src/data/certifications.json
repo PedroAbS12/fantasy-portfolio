@@ -1,0 +1,59 @@
+{
+  "categories": [
+    {
+      "id": "web",
+      "name": "🌐 Web Development",
+      "color": "gold"
+    },
+    {
+      "id": "siemens",
+      "name": "⚙️ SIEMENS",
+      "color": "cyan"
+    },
+    {
+      "id": "data",
+      "name": "🔮 Data & Analytics",
+      "color": "purple"
+    },
+    {
+      "id": "cloud",
+      "name": "☁️ Cloud & DevOps",
+      "color": "green"
+    }
+  ],
+  "certifications": [
+    {
+      "id": 1,
+      "title": "Vue.js Developer Certification",
+      "issuer": "Vue School",
+      "category": "web",
+      "date": "2024",
+      "credentialId": "VS-2024-XXXX",
+      "image": "",
+      "verifyUrl": "https://vueschool.io/certificates/...",
+      "skills": ["Vue 3", "Composition API", "Pinia"]
+    },
+    {
+      "id": 2,
+      "title": "SIEMENS TIA Portal S7-1200",
+      "issuer": "Siemens AG",
+      "category": "siemens",
+      "date": "2023",
+      "credentialId": "SIE-TIA-XXXX",
+      "image": "",
+      "verifyUrl": "",
+      "skills": ["TIA Portal", "PLC", "Ladder Logic"]
+    },
+    {
+      "id": 3,
+      "title": "Google Data Analytics",
+      "issuer": "Google / Coursera",
+      "category": "data",
+      "date": "2023",
+      "credentialId": "GDA-XXXX",
+      "image": "",
+      "verifyUrl": "https://coursera.org/verify/...",
+      "skills": ["SQL", "Tableau", "R", "Data Cleaning"]
+    }
+  ]
+}

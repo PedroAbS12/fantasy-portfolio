@@ -6,44 +6,152 @@
       "icon": "bi-code-slash",
       "color": "gold",
       "skills": [
-        { "name": "Vue.js",        "level": 90, "type": "gold",   "icon": "🟢" },
-        { "name": "JavaScript",    "level": 88, "type": "gold",   "icon": "🟡" },
-        { "name": "React",         "level": 75, "type": "gold",   "icon": "🔵" },
-        { "name": "HTML / CSS",    "level": 95, "type": "gold",   "icon": "🟠" },
-        { "name": "Node.js",       "level": 72, "type": "cyan",   "icon": "🟢" },
-        { "name": "Bootstrap",     "level": 85, "type": "cyan",   "icon": "🟣" },
-        { "name": "TypeScript",    "level": 65, "type": "cyan",   "icon": "🔵" },
-        { "name": "REST APIs",     "level": 82, "type": "gold",   "icon": "🔗" }
+        { "name": "React", "level": 75, "type": "cyan", "icon": "⚛️" },
+        { "name": "Vue.js", "level": 60, "type": "green", "icon": "🟢" },
+        { "name": "JavaScript", "level": 80, "type": "gold", "icon": "🟡" },
+        { "name": "TypeScript", "level": 30, "type": "cyan", "icon": "🔵" },
+        { "name": "HTML / CSS", "level": 85, "type": "gold", "icon": "🟠" },
+        { "name": "TailwindCSS", "level": 80, "type": "cyan", "icon": "🎨" },
+        { "name": "Bootstrap", "level": 60, "type": "purple", "icon": "🟣" },
+        { "name": "Vite", "level": 70, "type": "green", "icon": "⚡" }
+      ]
+    },
+    {
+      "id": "backend",
+      "name": "🔧 Backend Development",
+      "icon": "bi-hdd-network",
+      "color": "green",
+      "skills": [
+        { "name": "Node.js", "level": 70, "type": "green", "icon": "🟢" },
+        { "name": "REST APIs", "level": 90, "type": "gold", "icon": "🔗" },
+        { "name": "Supabase", "level": 80, "type": "cyan", "icon": "🟩" },
+        { "name": "Firebase", "level": 70, "type": "orange", "icon": "🔥" },
+        { "name": "AWS Lambda", "level": 50, "type": "purple", "icon": "☁️" },
+        { "name": "API Gateway", "level": 45, "type": "purple", "icon": "🌐" },
+        { "name": "Railway", "level": 40, "type": "cyan", "icon": "🚄" },
+        { "name": "Postman", "level": 90, "type": "cyan", "icon": "📬" }
       ]
     },
     {
       "id": "data",
-      "name": "🔮 Data Analysis",
+      "name": "🔮 Data Science & Analytics",
       "icon": "bi-graph-up",
       "color": "cyan",
       "skills": [
-        { "name": "Python",        "level": 92, "type": "cyan",   "icon": "🐍" },
-        { "name": "Pandas",        "level": 88, "type": "cyan",   "icon": "📊" },
-        { "name": "SQL",           "level": 85, "type": "green",  "icon": "🗄️" },
-        { "name": "Power BI",      "level": 78, "type": "green",  "icon": "📈" },
-        { "name": "Matplotlib",    "level": 80, "type": "cyan",   "icon": "📉" },
-        { "name": "Machine Learning","level": 60,"type": "purple", "icon": "🤖" },
-        { "name": "Tableau",       "level": 70, "type": "green",  "icon": "📋" },
-        { "name": "Excel Avanzado","level": 88, "type": "green",  "icon": "📗" }
+        { "name": "Python", "level": 92, "type": "cyan", "icon": "🐍" },
+        { "name": "Pandas", "level": 88, "type": "cyan", "icon": "📊" },
+        { "name": "SQL", "level": 85, "type": "green", "icon": "🗄️" },
+        {
+          "name": "Machine Learning",
+          "level": 70,
+          "type": "purple",
+          "icon": "🤖"
+        },
+        {
+          "name": "Time Series Analysis",
+          "level": 70,
+          "type": "cyan",
+          "icon": "📈"
+        },
+        { "name": "NLP", "level": 55, "type": "purple", "icon": "🧠" },
+        { "name": "Matplotlib", "level": 80, "type": "cyan", "icon": "📉" },
+        { "name": "Power BI", "level": 75, "type": "green", "icon": "📊" },
+        { "name": "Tableau", "level": 65, "type": "green", "icon": "📋" },
+        { "name": "Excel Avanzado", "level": 90, "type": "green", "icon": "📗" }
+      ]
+    },
+    {
+      "id": "databases",
+      "name": "🗄️ Databases",
+      "icon": "bi-database",
+      "color": "green",
+      "skills": [
+        { "name": "PostgreSQL", "level": 85, "type": "green", "icon": "🐘" },
+        { "name": "MySQL", "level": 80, "type": "green", "icon": "🗄️" },
+        { "name": "MongoDB", "level": 65, "type": "green", "icon": "🍃" },
+        {
+          "name": "Database Design",
+          "level": 80,
+          "type": "gold",
+          "icon": "📐"
+        },
+        { "name": "Data Modeling", "level": 75, "type": "cyan", "icon": "🧩" }
+      ]
+    },
+    {
+      "id": "ai",
+      "name": "🤖 Artificial Intelligence",
+      "icon": "bi-cpu",
+      "color": "purple",
+      "skills": [
+        {
+          "name": "Computer Vision",
+          "level": 42,
+          "type": "purple",
+          "icon": "👁️"
+        },
+        {
+          "name": "Neural Networks",
+          "level": 37,
+          "type": "purple",
+          "icon": "🧠"
+        },
+        { "name": "CNN", "level": 40, "type": "purple", "icon": "🧠" },
+        { "name": "MLP", "level": 35, "type": "purple", "icon": "🤖" },
+        {
+          "name": "Optimization / SAT-SMT",
+          "level": 72,
+          "type": "purple",
+          "icon": "🧩"
+        }
       ]
     },
     {
       "id": "tools",
-      "name": "🛠️ Herramientas",
+      "name": "🛠️ Tools & Platforms",
       "icon": "bi-tools",
       "color": "purple",
       "skills": [
-        { "name": "Git / GitHub",  "level": 90, "type": "gold",   "icon": "🐙" },
-        { "name": "Docker",        "level": 65, "type": "cyan",   "icon": "🐳" },
-        { "name": "PostgreSQL",    "level": 80, "type": "green",  "icon": "🐘" },
-        { "name": "MongoDB",       "level": 70, "type": "green",  "icon": "🍃" },
-        { "name": "Figma",         "level": 72, "type": "purple", "icon": "🎨" },
-        { "name": "Linux",         "level": 75, "type": "cyan",   "icon": "🐧" }
+        { "name": "Git / GitHub", "level": 55, "type": "gold", "icon": "🐙" },
+        { "name": "Linux", "level": 20, "type": "cyan", "icon": "🐧" },
+        { "name": "Figma", "level": 65, "type": "purple", "icon": "🎨" },
+        { "name": "MATLAB", "level": 80, "type": "orange", "icon": "📐" },
+        { "name": "Minitab", "level": 85, "type": "orange", "icon": "📊" },
+        { "name": "Bubble.io", "level": 90, "type": "cyan", "icon": "🫧" }
+      ]
+    },
+    {
+      "id": "engineering",
+      "name": "⚙️ Industrial & Embedded Systems",
+      "icon": "bi-cpu-fill",
+      "color": "orange",
+      "skills": [
+        {
+          "name": "PLC Programming",
+          "level": 65,
+          "type": "orange",
+          "icon": "⚙️"
+        },
+        { "name": "Ladder Logic", "level": 80, "type": "orange", "icon": "🪜" },
+        { "name": "Industrial IoT", "level": 65, "type": "cyan", "icon": "📡" },
+        {
+          "name": "Industrial Networks",
+          "level": 65,
+          "type": "orange",
+          "icon": "🌐"
+        },
+        {
+          "name": "Automation Systems",
+          "level": 80,
+          "type": "orange",
+          "icon": "🏭"
+        },
+        {
+          "name": "Embedded Programming",
+          "level": 65,
+          "type": "orange",
+          "icon": "💻"
+        }
       ]
     }
   ]

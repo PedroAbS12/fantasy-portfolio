@@ -2,79 +2,117 @@
   "experience": [
     {
       "id": 1,
-      "role": "Full Stack Developer",
-      "company": "Empresa Épica S.A.",
-      "period": "2022 - Presente",
+      "role": "Ingeniero Asociado",
+      "company": "Konfront",
+      "period": "2024 - Presente",
       "type": "work",
-      "icon": "⚔️",
-      "description": "Desarrollo de aplicaciones web con Vue.js y Node.js. Liderazgo técnico de equipo de 3 desarrolladores. Implementación de pipelines CI/CD y arquitectura de microservicios.",
+      "icon": "💻",
+      "description": "Desarrollo de soluciones de software y análisis de datos para apoyar operaciones internas, automatización de procesos y toma de decisiones basada en datos.",
       "achievements": [
-        "Reducción de 40% en tiempo de carga de aplicaciones",
-        "Migración exitosa de sistema legacy a Vue 3",
-        "Implementación de suite de pruebas con 85% cobertura"
+        "Migración de bases de datos heredadas de MySQL a PostgreSQL incluyendo rediseño de esquemas, normalización y limpieza de datos",
+        "Desarrollo de herramientas internas y dashboards web utilizando React y APIs REST para apoyar flujos operativos",
+        "Creación de pipelines de transformación y validación de datos para estandarizar información entre múltiples sistemas",
+        "Análisis de datos con SQL para generar KPIs y reportes utilizados en decisiones operativas",
+        "Colaboración con equipos multidisciplinarios para traducir necesidades de negocio en soluciones técnicas escalables"
       ],
-      "tech": ["Vue.js", "Node.js", "PostgreSQL", "Docker"]
+      "tech": [
+        "React",
+        "JavaScript",
+        "Node.js",
+        "PostgreSQL",
+        "SQL",
+        "Python",
+        "REST APIs",
+        "Git",
+        "Supabase"
+      ]
     },
     {
       "id": 2,
-      "role": "Data Analyst",
-      "company": "Data Kingdom Corp",
-      "period": "2020 - 2022",
+      "role": "Desarrollador de Proyectos de Automatización",
+      "company": "Spin Grupo",
+      "period": "2023",
       "type": "work",
-      "icon": "🔮",
-      "description": "Análisis de datos para área comercial y finanzas. Construcción de dashboards en Power BI y automatización de reportes con Python.",
+      "icon": "⚙️",
+      "description": "Desarrollo de soluciones de automatización industrial para sistemas de manufactura integrando lógica de control y redes industriales.",
       "achievements": [
-        "Ahorro de 20hrs/semana mediante automatización de reportes",
-        "Dashboard adoptado por toda la organización (500+ usuarios)",
-        "Modelo predictivo con 89% de precisión para forecast de ventas"
+        "Programación de controladores PLC e implementación de algoritmos de control para sistemas mecatrónicos de producción",
+        "Diseño de soluciones de automatización alineadas con requerimientos de manufactura",
+        "Implementación de lógica de control utilizando Ladder Logic",
+        "Configuración de comunicación entre dispositivos industriales y sistemas de control"
       ],
-      "tech": ["Python", "SQL", "Power BI", "Excel"]
-    },
-    {
-      "id": 3,
-      "role": "Junior Web Developer",
-      "company": "StartUp Dungeon",
-      "period": "2019 - 2020",
-      "type": "work",
-      "icon": "🗡️",
-      "description": "Desarrollo frontend con React y mantenimiento de APIs REST. Primera aventura profesional en el mundo del desarrollo.",
-      "achievements": [
-        "Desarrollo de landing pages con +95 score en Lighthouse",
-        "Integración con APIs de terceros (Stripe, Twilio)",
-        "Primer deploy a producción de aplicación crítica"
-      ],
-      "tech": ["React", "JavaScript", "CSS", "MySQL"]
+      "tech": [
+        "PLC",
+        "Ladder Logic",
+        "Automatización Industrial",
+        "Redes Industriales",
+        "Sistemas de Control"
+      ]
     }
   ],
   "education": [
     {
-      "id": 4,
-      "role": "Ingeniería en Sistemas / Computación",
-      "company": "Universidad del Reino",
-      "period": "2015 - 2019",
+      "id": 3,
+      "role": "Ingeniería en Mecatrónica",
+      "company": "Tecnológico de Monterrey",
+      "period": "2019 - 2024",
       "type": "education",
-      "icon": "📜",
-      "description": "Formación en ciencias de la computación, algoritmos, bases de datos y desarrollo de software.",
+      "icon": "🎓",
+      "description": "Programa de ingeniería enfocado en robótica, automatización, programación y aplicaciones de inteligencia artificial.",
       "achievements": [
-        "Titulado con mención honorífica",
-        "Proyecto de tesis: Sistema de recomendación con ML",
-        "Representante de generación"
+        "Desarrollo de múltiples proyectos en automatización, robótica y aprendizaje automático",
+        "Participación en proyectos académicos internacionales con la Universidad de Twente",
+        "Desarrollo de soluciones de ingeniería combinando software, datos y sistemas físicos"
       ],
-      "tech": ["Java", "C++", "Algoritmos", "BD"]
+      "tech": [
+        "Python",
+        "MATLAB",
+        "Machine Learning",
+        "Computer Vision",
+        "Automatización"
+      ]
+    },
+    {
+      "id": 4,
+      "role": "Certificación en Plant Simulation",
+      "company": "Siemens",
+      "period": "2023",
+      "type": "certification",
+      "icon": "📜",
+      "description": "Certificación enfocada en simulación de fábricas digitales y optimización de sistemas de producción industrial.",
+      "achievements": [
+        "Simulación de sistemas de manufactura y flujos de producción",
+        "Modelado de procesos industriales para evaluar eficiencia y cuellos de botella"
+      ],
+      "tech": ["Plant Simulation", "Fábrica Digital", "Sistemas Industriales"]
     },
     {
       "id": 5,
-      "role": "Certificación Data Science",
-      "company": "Online Academy of Wizards",
-      "period": "2021",
+      "role": "Certificación InsightHub",
+      "company": "Siemens",
+      "period": "2023",
       "type": "certification",
-      "icon": "🏆",
-      "description": "Bootcamp intensivo de 6 meses en ciencia de datos, machine learning y visualización.",
+      "icon": "📊",
+      "description": "Capacitación enfocada en análisis de datos industriales y plataformas IoT para monitoreo de producción.",
       "achievements": [
-        "Top 5% del cohorte",
-        "Proyecto final: Análisis de sentimientos en redes sociales"
+        "Monitoreo y visualización de datos industriales",
+        "Integración de plataformas IoT en entornos de manufactura"
       ],
-      "tech": ["Python", "TensorFlow", "NLP", "Tableau"]
+      "tech": ["IoT Industrial", "Análisis de Datos", "Monitoreo de Sistemas"]
+    },
+    {
+      "id": 6,
+      "role": "Certificaciones en SQL y MySQL",
+      "company": "Platzi",
+      "period": "2023",
+      "type": "certification",
+      "icon": "🗄️",
+      "description": "Formación avanzada en bases de datos relacionales, consultas SQL y modelado de bases de datos.",
+      "achievements": [
+        "Consultas SQL avanzadas y análisis de datos",
+        "Modelado y optimización de bases de datos"
+      ],
+      "tech": ["SQL", "MySQL", "PostgreSQL"]
     }
   ]
 }

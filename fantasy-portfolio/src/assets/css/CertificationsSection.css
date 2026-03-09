@@ -1,0 +1,156 @@
+/* ============================================
+   CERTIFICATIONSSECTION.CSS
+   ============================================ */
+
+.active-filter {
+  background: var(--pixel-gold) !important;
+  color: var(--pixel-dark) !important;
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--pixel-gold-dark) !important;
+}
+
+/* ── Card borders by category ── */
+.border-gold   { border-color: var(--pixel-gold)   !important; }
+.border-cyan   { border-color: var(--pixel-cyan)   !important; }
+.border-purple { border-color: var(--pixel-violet) !important; }
+.border-green  { border-color: var(--pixel-green)  !important; }
+
+/* ── Card ── */
+.cert-card {
+  cursor: pointer;
+  transition: transform 0.1s steps(2), box-shadow 0.1s steps(2);
+  display: flex;
+  flex-direction: column;
+}
+.cert-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 7px 7px 0 #000, 0 0 20px rgba(255,215,0,0.1);
+}
+
+/* ── Image area ── */
+.cert-image-wrap {
+  position: relative;
+  height: 180px;
+  background: var(--pixel-darker);
+  overflow: hidden;
+}
+.cert-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; image-rendering: pixelated; }
+.cert-card:hover .cert-img { transform: scale(1.03); }
+
+/* ── Placeholder ── */
+.cert-placeholder {
+  width: 100%; height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at center, #1a1a4e 0%, var(--pixel-darker) 100%);
+  gap: 8px;
+}
+.placeholder-scroll { font-size: 3rem; animation: float 3s ease-in-out infinite; }
+.placeholder-text   { font-family: var(--font-pixel); font-size: 0.4rem; color: var(--pixel-gray); letter-spacing: 0.1em; }
+
+/* ── Hover overlay ── */
+.cert-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(7,7,15,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.cert-card:hover .cert-overlay { opacity: 1; }
+.overlay-icon { font-size: 2rem; }
+
+/* ── Ribbon ── */
+.cert-ribbon {
+  position: absolute;
+  top: 10px; left: -4px;
+  font-family: var(--font-pixel);
+  font-size: 0.35rem;
+  padding: 4px 10px;
+  letter-spacing: 0.05em;
+}
+.ribbon-gold   { background: var(--pixel-gold);   color: var(--pixel-dark);  }
+.ribbon-cyan   { background: var(--pixel-cyan);   color: var(--pixel-dark);  }
+.ribbon-purple { background: var(--pixel-violet); color: var(--pixel-white); }
+.ribbon-green  { background: var(--pixel-green);  color: var(--pixel-dark);  }
+
+/* ── Card text ── */
+.cert-title  { font-size: 0.55rem; color: var(--pixel-white); line-height: 1.5; }
+.cert-issuer { font-family: var(--font-retro); font-size: 1rem; color: var(--pixel-cyan); }
+.cert-date   { font-family: var(--font-pixel); font-size: 0.38rem; color: var(--pixel-gray); }
+.cert-id     { font-family: var(--font-pixel); font-size: 0.32rem; color: var(--pixel-gray); }
+.cert-link-sm { font-size: 0.38rem !important; padding: 6px 10px !important; }
+
+/* ── Stats bar ── */
+.cert-stats { background: rgba(10,10,30,0.6); }
+.stat-num   { font-family: var(--font-pixel); font-size: 1.4rem; margin-bottom: 4px; }
+.stat-lbl   { font-family: var(--font-pixel); font-size: 0.35rem; color: var(--pixel-gray); }
+.color-gold   { color: var(--pixel-gold);   text-shadow: 0 0 10px var(--pixel-gold);   }
+.color-cyan   { color: var(--pixel-cyan);   text-shadow: 0 0 10px var(--pixel-cyan);   }
+.color-purple { color: var(--pixel-violet); text-shadow: 0 0 10px var(--pixel-violet); }
+.color-green  { color: var(--pixel-green);  text-shadow: 0 0 10px var(--pixel-green);  }
+
+/* ── Empty state ── */
+.cert-empty-icon { font-size: 2.5rem; }
+.cert-empty-text { font-family: var(--font-pixel); font-size: 0.45rem; color: var(--pixel-gray); }
+
+/* ── Modal ── */
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.88);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  backdrop-filter: blur(6px);
+}
+.modal-content {
+  max-width: 700px; width: 100%;
+  max-height: 92vh; overflow-y: auto;
+  padding: 2rem; position: relative;
+}
+.modal-close        { position: absolute; top: 1rem; right: 1rem; }
+.modal-title        { font-size: 0.7rem; color: var(--pixel-gold); }
+.modal-issuer       { font-family: var(--font-retro); font-size: 1.05rem; color: var(--pixel-cyan); }
+.modal-skills-label { font-family: var(--font-pixel); font-size: 0.42rem; color: var(--pixel-gray); }
+
+/* ── Diploma frame ── */
+.diploma-frame {
+  border: 3px solid var(--pixel-gold);
+  background: var(--pixel-darker);
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255,215,0,0.2);
+}
+.diploma-img { width: 100%; max-height: 480px; object-fit: contain; image-rendering: auto; display: block; }
+
+/* ── Placeholder diploma ── */
+.diploma-placeholder { padding: 3rem 2rem; }
+.dp-decoration { display: flex; justify-content: center; }
+.dp-border {
+  border: 4px double var(--pixel-gold);
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: inset 0 0 20px rgba(255,215,0,0.05);
+  background: radial-gradient(ellipse at center, #0d0d2e 0%, var(--pixel-darker) 100%);
+}
+.dp-inner     { text-align: center; }
+.dp-icon      { font-size: 3rem; margin-bottom: 1rem; }
+.dp-cert-text { font-family: var(--font-pixel); font-size: 0.38rem; color: var(--pixel-gray); letter-spacing: 0.2em; margin-bottom: 1.5rem; }
+.dp-name      { font-family: var(--font-pixel); font-size: 0.6rem; color: var(--pixel-gold); text-shadow: 0 0 10px var(--pixel-gold); margin-bottom: 0.75rem; line-height: 1.6; }
+.dp-issuer    { font-family: var(--font-retro); font-size: 1.1rem; color: var(--pixel-cyan); margin-bottom: 0.5rem; }
+.dp-date      { font-family: var(--font-pixel); font-size: 0.38rem; color: var(--pixel-gray); margin-bottom: 0.5rem; }
+.dp-id        { font-family: var(--font-pixel); font-size: 0.32rem; color: var(--pixel-border); margin-top: 1rem; }
+
+/* ── Transitions ── */
+.modal-fade-enter-active, .modal-fade-leave-active { transition: all 0.2s ease; }
+.modal-fade-enter-from,   .modal-fade-leave-to     { opacity: 0; transform: scale(0.95); }
+.cert-anim-enter-active { transition: all 0.3s ease; }
+.cert-anim-leave-active { transition: all 0.2s ease; position: absolute; }
+.cert-anim-enter-from,
+.cert-anim-leave-to     { opacity: 0; transform: scale(0.9); }

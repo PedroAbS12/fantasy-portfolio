@@ -11,7 +11,7 @@
           v-for="cat in skills.categories"
           :key="cat.id"
           class="pixel-btn"
-          :class="{ 'active-tab': activeCategory === cat.id, [`btn-tab-${cat.color}`]: true }"
+          :class="{ 'active-tab': activeCategory === cat.id }"
           @click="activeCategory = cat.id"
         >
           <i :class="`bi ${cat.icon} me-2`"></i>{{ cat.name }}
@@ -49,10 +49,8 @@
                   :class="`bar-${skill.type}`"
                   :style="{ width: animated ? `${skill.level}%` : '0%' }"
                 ></div>
-                <!-- Level markers -->
                 <div class="bar-markers">
-                  <span v-for="m in [25,50,75]" :key="m"
-                    class="bar-marker" :style="{ left: `${m}%` }"></span>
+                  <span v-for="m in [25, 50, 75]" :key="m" class="bar-marker" :style="{ left: `${m}%` }"></span>
                 </div>
               </div>
             </div>
@@ -71,104 +69,38 @@
   </section>
 </template>
 
-<script setup>
+<script>
 import { ref, computed, onMounted } from 'vue'
 import skills from '@/data/skills.json'
 
-const activeCategory = ref('all')
-const animated = ref(false)
+export default {
+  name: 'SkillsSection',
 
-const filteredCategories = computed(() => {
-  if (activeCategory.value === 'all') return skills.categories
-  return skills.categories.filter(c => c.id === activeCategory.value)
-})
+  setup() {
+    const activeCategory = ref('all')
+    const animated       = ref(false)
 
-const legend = [
-  { label: 'Web Dev',   color: 'var(--pixel-gold)' },
-  { label: 'Data',      color: 'var(--pixel-cyan)' },
-  { label: 'Backend',   color: 'var(--pixel-green)' },
-  { label: 'Advanced',  color: 'var(--pixel-violet)' },
-]
+    const filteredCategories = computed(() => {
+      if (activeCategory.value === 'all') return skills.categories
+      return skills.categories.filter(c => c.id === activeCategory.value)
+    })
 
-onMounted(() => {
-  const observer = new IntersectionObserver(([entry]) => {
-    if (entry.isIntersecting) { animated.value = true; observer.disconnect() }
-  }, { threshold: 0.1 })
-  const el = document.getElementById('skills')
-  if (el) observer.observe(el)
-})
+    const legend = [
+      { label: 'Web Dev',  color: 'var(--pixel-gold)'   },
+      { label: 'Data',     color: 'var(--pixel-cyan)'   },
+      { label: 'Backend',  color: 'var(--pixel-green)'  },
+      { label: 'Advanced', color: 'var(--pixel-violet)' },
+    ]
+
+    onMounted(() => {
+      const observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) { animated.value = true; observer.disconnect() }
+      }, { threshold: 0.1 })
+      const el = document.getElementById('skills')
+      if (el) observer.observe(el)
+    })
+
+    return { skills, activeCategory, animated, filteredCategories, legend }
+  },
+}
 </script>
-
-<style scoped>
-.py-section { padding: 6rem 0; }
-
-.title-prefix { color: var(--pixel-cyan); }
-
-/* Tabs */
-.active-tab {
-  background: var(--pixel-gold) !important;
-  color: var(--pixel-dark) !important;
-  transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 var(--pixel-gold-dark) !important;
-}
-
-.skill-card {
-  animation: slide-up 0.5s ease both;
-}
-
-.skill-category-title {
-  font-size: 0.65rem;
-  color: var(--pixel-cyan);
-  border-bottom: 2px solid var(--pixel-border);
-  padding-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.skill-row { animation: slide-up 0.4s ease both; }
-
-.skill-name {
-  font-family: var(--font-retro);
-  font-size: 1.1rem;
-  color: var(--pixel-white);
-}
-
-.skill-emoji { font-size: 1rem; }
-
-.skill-level {
-  font-family: var(--font-pixel);
-  font-size: 0.4rem;
-  min-width: 40px;
-  text-align: right;
-}
-.level-gold   { color: var(--pixel-gold); }
-.level-cyan   { color: var(--pixel-cyan); }
-.level-green  { color: var(--pixel-green); }
-.level-purple { color: var(--pixel-violet); }
-
-.bar-markers { position: absolute; inset: 0; pointer-events: none; }
-.bar-marker {
-  position: absolute;
-  top: 0; bottom: 0;
-  width: 1px;
-  background: rgba(255,255,255,0.1);
-}
-
-.xp-bar-wrap { position: relative; }
-
-.xp-bar-fill.bar-purple {
-  background: linear-gradient(90deg, #2a0a5e, var(--pixel-violet));
-  box-shadow: 0 0 8px var(--pixel-violet);
-}
-
-/* Legend */
-.legend-item { display: flex; align-items: center; gap: 8px; }
-.legend-bar  { width: 30px; height: 8px; }
-.legend-label { font-family: var(--font-pixel); font-size: 0.4rem; color: var(--pixel-gray); }
-
-/* Transitions */
-.skills-fade-enter-active { transition: all 0.3s ease; }
-.skills-fade-leave-active { transition: all 0.2s ease; }
-.skills-fade-enter-from   { opacity: 0; transform: translateY(20px); }
-.skills-fade-leave-to     { opacity: 0; transform: translateY(-20px); }
-</style>
