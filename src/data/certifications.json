@@ -23,7 +23,7 @@
       "issuer": "Platzi",
       "category": "web",
       "date": "2025",
-      "image": "/src/assets/pictures/certificates/html-css.png",
+      "image": "/fantasy-portfolio/pictures/certificates/html-css.png",
       "skills": ["HTML", "CSS", "JS"]
     },
     {
@@ -32,7 +32,7 @@
       "issuer": "Platzi",
       "category": "web",
       "date": "2026",
-      "image": "/src/assets/pictures/certificates/terminal.png",
+      "image": "/fantasy-portfolio/pictures/certificates/terminal.png",
       "skills": ["Linux", "Terminal"]
     },
     {
@@ -41,7 +41,7 @@
       "issuer": "Platzi",
       "category": "data",
       "date": "2025",
-      "image": "/src/assets/pictures/certificates/my-sql.png",
+      "image": "/fantasy-portfolio/pictures/certificates/my-sql.png",
       "skills": ["SQL", "QUERY", "MYSQL"]
     },
     {
@@ -50,7 +50,7 @@
       "issuer": "SIEMENS Xcelerator Academy",
       "category": "siemens",
       "date": "2025",
-      "image": "/src/assets/pictures/certificates/insights-hub.png",
+      "image": "/fantasy-portfolio/pictures/certificates/insights-hub.png",
       "skills": ["TIA Portal", "PLC", "Ladder Logic", "Mindsphere"]
     },
     {
@@ -59,7 +59,7 @@
       "issuer": "SIEMENS Xcelerator Academy",
       "category": "siemens",
       "date": "2023",
-      "image": "/src/assets/pictures/certificates/plant-simulation.png",
+      "image": "/fantasy-portfolio/pictures/certificates/plant-simulation.png",
       "skills": ["Plant Simulation", "TIA Portal", "PLC", "Ladder Logic"]
     }
   ]
