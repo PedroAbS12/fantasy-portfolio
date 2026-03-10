@@ -5,16 +5,13 @@
       "title": "Modelo de IA para Reconocimiento de Señales",
       "subtitle": "Clasificación de Señales con Machine Learning",
       "description": "Proyecto de aprendizaje automático desarrollado en colaboración con Belkin y la Universidad de Twente para clasificar señales eléctricas trifásicas utilizando arquitecturas de redes neuronales.",
+      "origin": "academic",
       "category": "data",
       "status": "completado",
       "difficulty": "avanzado",
       "image": "/src/assets/pictures/señales.png",
       "tags": ["Python", "Machine Learning", "CNN", "MLP", "Series de Tiempo"],
-      "links": {
-        "live": "",
-        "github": "",
-        "video": ""
-      },
+      "links": { "live": "", "github": "", "video": "" },
       "year": 2024,
       "featured": true
     },
@@ -23,16 +20,13 @@
       "title": "Sistema Distribuido del Juego Dots and Boxes",
       "subtitle": "Arquitectura de Servidor Multijugador",
       "description": "Sistema multijugador distribuido que implementa comunicación cliente-servidor y manejo de mensajes utilizando procesamiento multihilo.",
+      "origin": "academic",
       "category": "backend",
       "status": "completado",
       "difficulty": "avanzado",
       "image": "/src/assets/pictures/dots-boxes.png",
       "tags": ["Java", "POO", "Multihilo", "Arquitectura de Servidor"],
-      "links": {
-        "live": "",
-        "github": "",
-        "video": ""
-      },
+      "links": { "live": "", "github": "", "video": "" },
       "year": 2024,
       "featured": true
     },
@@ -41,16 +35,13 @@
       "title": "Sistema de Detección de Defectos en Cerámica",
       "subtitle": "Inspección Industrial con Visión por Computadora",
       "description": "Sistema de visión por computadora desarrollado para detectar imperfecciones en productos cerámicos utilizando técnicas de procesamiento de imágenes y clasificación.",
+      "origin": "academic",
       "category": "ai",
       "status": "completado",
       "difficulty": "avanzado",
       "image": "/src/assets/pictures/computer-vision.png",
       "tags": ["Visión por Computadora", "Python", "Procesamiento de Imágenes"],
-      "links": {
-        "live": "",
-        "github": "",
-        "video": ""
-      },
+      "links": { "live": "", "github": "", "video": "" },
       "year": 2023,
       "featured": true
     },
@@ -59,17 +50,44 @@
       "title": "Simulación de Movimiento Robótico",
       "subtitle": "Simulación con Vectores 3D",
       "description": "Simulación del movimiento de un robot utilizando vectores 3D para el control de articulaciones y análisis de trayectorias.",
+      "origin": "academic",
       "category": "engineering",
       "status": "completado",
       "difficulty": "intermedio",
       "image": "/src/assets/pictures/robo_dk.png",
       "tags": ["MATLAB", "Python", "Vectores", "RoboDK"],
-      "links": {
-        "live": "",
-        "github": "",
-        "video": ""
-      },
+      "links": { "live": "", "github": "", "video": "" },
       "year": 2023,
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Ejemplo Proyecto Laboral",
+      "subtitle": "Dashboard de Analítica Empresarial",
+      "description": "Dashboard interactivo para visualización de KPIs y métricas de negocio. Desarrollado en el contexto profesional para toma de decisiones estratégicas.",
+      "origin": "work",
+      "category": "data",
+      "status": "completado",
+      "difficulty": "avanzado",
+      "image": "",
+      "tags": ["Power BI", "SQL", "Python", "ETL"],
+      "links": { "live": "", "github": "", "video": "" },
+      "year": 2024,
+      "featured": false
+    },
+    {
+      "id": 6,
+      "title": "Ejemplo Proyecto Personal",
+      "subtitle": "Herramienta Personal / Emprendimiento",
+      "description": "Proyecto personal o de emprendimiento. Agrega aquí tus proyectos propios, side projects o iniciativas independientes.",
+      "origin": "personal",
+      "category": "web",
+      "status": "en-progreso",
+      "difficulty": "intermedio",
+      "image": "",
+      "tags": ["Vue.js", "Node.js", "Bootstrap"],
+      "links": { "live": "", "github": "", "video": "" },
+      "year": 2024,
       "featured": false
     }
   ]

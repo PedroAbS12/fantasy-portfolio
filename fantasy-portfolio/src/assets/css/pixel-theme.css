@@ -262,7 +262,7 @@ span {
 .section-title {
   font-family: var(--font-pixel);
   color: var(--pixel-gold);
-  text-shadow: var(--shadow-gold), var(--shadow-glow);
+
   text-align: center;
   position: relative;
   padding-bottom: 1rem;

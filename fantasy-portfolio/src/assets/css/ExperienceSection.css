@@ -12,7 +12,9 @@
 }
 
 /* ── Timeline ── */
-.timeline { position: relative; }
+.timeline {
+  position: relative;
+}
 
 .timeline-item {
   display: flex;
@@ -38,7 +40,9 @@
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-  box-shadow: 0 0 10px rgba(255,215,0,0.3), 2px 2px 0 #000;
+  box-shadow:
+    0 0 10px rgba(255, 215, 0, 0.3),
+    2px 2px 0 #000;
   flex-shrink: 0;
   z-index: 1;
 }
@@ -56,19 +60,60 @@
   flex: 1;
   animation: pixel-in 0.5s ease both;
 }
-.timeline-card:hover { transform: translateX(3px); transition: transform 0.1s steps(2); }
+.timeline-card:hover {
+  transform: translateX(3px);
+  transition: transform 0.1s steps(2);
+}
 
 .edu-cert {
   border-color: var(--pixel-gold);
-  box-shadow: 4px 4px 0 var(--pixel-gold-dark), 0 0 15px rgba(255,215,0,0.1);
+  box-shadow:
+    4px 4px 0 var(--pixel-gold-dark),
+    0 0 15px rgba(255, 215, 0, 0.1);
 }
 
-.item-role    { font-size: 0.55rem; color: var(--pixel-gold); margin-bottom: 4px; }
-.item-company { font-family: var(--font-retro); font-size: 1rem; color: var(--pixel-cyan); }
-.item-period  { font-family: var(--font-pixel); font-size: 0.38rem; color: var(--pixel-gray); white-space: nowrap; }
-.item-desc    { font-family: var(--font-retro); font-size: 1rem; color: var(--pixel-white); line-height: 1.7; }
+.item-role {
+  font-size: 0.55rem;
+  color: var(--pixel-gold);
+  margin-bottom: 4px;
+}
+.item-company {
+  font-family: var(--font-retro);
+  font-size: 1rem;
+  color: var(--pixel-cyan);
+}
+.item-period {
+  font-family: var(--font-pixel);
+  font-size: 0.38rem;
+  color: var(--pixel-gray);
+  white-space: nowrap;
+}
+.item-desc {
+  font-family: var(--font-retro);
+  font-size: 1rem;
+  color: var(--pixel-white);
+  line-height: 1.7;
+}
 
-.achiev-label  { font-family: var(--font-pixel); font-size: 0.4rem; color: var(--pixel-amber); }
-.achiev-list   { list-style: none; padding: 0; margin: 0; }
-.achiev-item   { font-family: var(--font-retro); font-size: 0.95rem; color: var(--pixel-gray); margin-bottom: 4px; display: flex; gap: 8px; }
-.achiev-bullet { color: var(--pixel-gold); flex-shrink: 0; }
+.achiev-label {
+  font-family: var(--font-pixel);
+  font-size: 0.4rem;
+  color: var(--pixel-amber);
+}
+.achiev-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.achiev-item {
+  font-family: var(--font-retro);
+  font-size: 0.95rem;
+  color: var(--pixel-gray);
+  margin-bottom: 4px;
+  display: flex;
+  gap: 8px;
+}
+.achiev-bullet {
+  color: var(--pixel-gold);
+  flex-shrink: 0;
+}

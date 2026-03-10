@@ -28,7 +28,9 @@
   font-family: var(--font-pixel);
   font-size: clamp(1.2rem, 5vw, 2rem);
   color: var(--pixel-gold);
-  text-shadow: 0 0 30px var(--pixel-gold), 4px 4px 0 var(--pixel-gold-dark);
+  text-shadow:
+    0 0 30px var(--pixel-gold),
+    4px 4px 0 var(--pixel-gold-dark);
   margin-bottom: 0.5rem;
 }
 
@@ -60,5 +62,9 @@
   color: var(--pixel-gold);
 }
 
-.boot-fade-leave-active { transition: opacity 0.5s ease; }
-.boot-fade-leave-to     { opacity: 0; }
+.boot-fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.boot-fade-leave-to {
+  opacity: 0;
+}
