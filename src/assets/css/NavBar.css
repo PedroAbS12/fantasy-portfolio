@@ -1,5 +1,5 @@
 /* ============================================
-   NAVBAR.CSS
+   NAVBAR.CSS — Castle rampart / village gate
    ============================================ */
 
 .pixel-navbar {
@@ -9,16 +9,34 @@
   right: 0;
   z-index: 1000;
   padding: 12px 0;
-  background: rgba(7, 7, 15, 0.7);
+  background: rgba(15, 10, 4, 0.82);
   border-bottom: 3px solid var(--pixel-border);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
+/* Battlement stripe along the very top */
+.pixel-navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--pixel-gold) 0px,
+    var(--pixel-gold) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+  opacity: 0.4;
+}
+
 .pixel-navbar.scrolled {
-  background: rgba(7, 7, 15, 0.95);
+  background: rgba(15, 10, 4, 0.97);
   border-bottom-color: var(--pixel-gold);
-  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(200, 146, 42, 0.28);
 }
 
 .nav-scanline {
@@ -42,7 +60,7 @@
   font-size: 0.75rem;
   color: var(--pixel-gold);
   text-decoration: none;
-  text-shadow: 0 0 10px var(--pixel-gold);
+  text-shadow: 0 0 10px rgba(200, 146, 42, 0.6);
   letter-spacing: 0.1em;
 }
 
@@ -76,14 +94,15 @@
 .nav-link-px.active {
   color: var(--pixel-gold);
   border-color: var(--pixel-gold);
-  background: rgba(255, 215, 0, 0.08);
+  background: rgba(200, 146, 42, 0.1);
   box-shadow:
     2px 2px 0 var(--pixel-gold-dark),
-    0 0 10px rgba(255, 215, 0, 0.2);
+    0 0 10px rgba(200, 146, 42, 0.22);
 }
 
 .nav-emoji {
   font-size: 0.85rem;
+  animation: torch-flicker 3s ease-in-out infinite;
 }
 
 .mobile-menu-btn {
@@ -100,6 +119,7 @@
   list-style: none;
   border-top: 2px solid var(--pixel-border);
   padding-top: 0.5rem;
+  background: rgba(15, 10, 4, 0.97);
 }
 
 .mobile-nav-link {
@@ -118,6 +138,7 @@
 .mobile-nav-link.active {
   color: var(--pixel-gold);
   padding-left: 16px;
+  background: rgba(200, 146, 42, 0.06);
 }
 
 .slide-down-enter-active,
@@ -128,4 +149,25 @@
 .slide-down-leave-to {
   opacity: 0;
   transform: translateY(-10px);
+}
+
+/* Torch-flicker keyframe referenced above */
+@keyframes torch-flicker {
+  0%,
+  100% {
+    opacity: 1;
+    filter: brightness(1);
+  }
+  25% {
+    opacity: 0.88;
+    filter: brightness(1.15);
+  }
+  50% {
+    opacity: 0.95;
+    filter: brightness(0.9);
+  }
+  75% {
+    opacity: 0.9;
+    filter: brightness(1.1);
+  }
 }

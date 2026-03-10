@@ -1,14 +1,15 @@
 /* ============================================
-   CONTACTSECTION.CSS
+   CONTACTSECTION.CSS — Messenger Ravens / Village Inn
    ============================================ */
 
 .contact-section {
   background: linear-gradient(
     180deg,
     transparent,
-    rgba(10, 0, 30, 0.4),
+    rgba(15, 35, 10, 0.35),
     transparent
   );
+  position: relative;
 }
 .contact-sub {
   font-family: var(--font-retro);
@@ -61,7 +62,7 @@
   font-size: 0.4rem;
   padding: 8px 12px;
   border: 2px solid var(--pixel-border);
-  background: var(--pixel-darker);
+  background: linear-gradient(135deg, #2e1c0c, #1a1008);
   color: var(--pixel-gray);
   text-decoration: none;
   display: flex;
@@ -150,7 +151,7 @@
 }
 .pixel-input {
   width: 100%;
-  background: var(--pixel-darker);
+  background: linear-gradient(145deg, #1a1008, #0f0a04);
   border: 3px solid var(--pixel-border);
   color: var(--pixel-white);
   font-family: var(--font-retro);
@@ -163,7 +164,7 @@
 }
 .pixel-input:focus {
   border-color: var(--pixel-gold);
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+  box-shadow: 0 0 10px rgba(200, 146, 42, 0.25);
 }
 .pixel-input.error {
   border-color: var(--pixel-red);

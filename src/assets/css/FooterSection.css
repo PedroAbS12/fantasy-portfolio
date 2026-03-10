@@ -1,10 +1,32 @@
 /* ============================================
-   FOOTERSECTION.CSS
+   FOOTERSECTION.CSS — Kingdom Seal / Village Gate
    ============================================ */
 
 .pixel-footer {
-  background: var(--pixel-darker);
+  background: linear-gradient(180deg, #0f0a04 0%, #080602 100%);
   position: relative;
+}
+
+/* Cobblestone row decoration at top of footer */
+.pixel-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--pixel-border) 0px,
+    var(--pixel-border) 18px,
+    rgba(90, 80, 64, 0.4) 18px,
+    rgba(90, 80, 64, 0.4) 19px,
+    var(--pixel-border) 19px,
+    var(--pixel-border) 36px,
+    transparent 36px,
+    transparent 38px
+  );
+  opacity: 0.6;
 }
 
 .footer-top-border {

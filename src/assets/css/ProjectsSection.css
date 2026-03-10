@@ -1,14 +1,30 @@
 /* ============================================
-   PROJECTSSECTION.CSS
+   PROJECTSSECTION.CSS — Quest Board / Village Notice
    ============================================ */
 
+/* Forest mist background between buildings */
 .projects-bg {
   background: linear-gradient(
     180deg,
     transparent,
-    rgba(10, 10, 30, 0.5),
+    rgba(15, 35, 10, 0.4),
     transparent
   );
+}
+
+/* Village cobblestone path between card sections */
+.projects-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent 0px,
+    transparent 23px,
+    rgba(90, 80, 64, 0.04) 23px,
+    rgba(90, 80, 64, 0.04) 24px
+  );
+  pointer-events: none;
 }
 
 /* ══════════════════════════════════════
@@ -25,7 +41,7 @@
   font-family: var(--font-pixel);
   font-size: 0.48rem;
   padding: 12px 20px;
-  background: var(--pixel-navy);
+  background: linear-gradient(180deg, #2e1c0c 0%, #1a1008 100%);
   border: 3px solid var(--pixel-border);
   color: var(--pixel-gray);
   cursor: pointer;
@@ -59,22 +75,22 @@
 .origin-tabs .origin-tab:nth-child(1).origin-tab--active {
   border-color: var(--pixel-white);
   color: var(--pixel-white);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(240, 228, 192, 0.06);
 }
 .origin-tabs .origin-tab:nth-child(2).origin-tab--active {
   border-color: var(--pixel-gold);
   color: var(--pixel-gold);
-  background: rgba(255, 215, 0, 0.08);
+  background: rgba(200, 146, 42, 0.1);
 }
 .origin-tabs .origin-tab:nth-child(3).origin-tab--active {
   border-color: var(--pixel-cyan);
   color: var(--pixel-cyan);
-  background: rgba(0, 204, 255, 0.08);
+  background: rgba(106, 176, 216, 0.1);
 }
 .origin-tabs .origin-tab:nth-child(4).origin-tab--active {
   border-color: var(--pixel-green);
   color: var(--pixel-green);
-  background: rgba(0, 204, 102, 0.08);
+  background: rgba(74, 140, 58, 0.1);
 }
 
 .origin-tab__icon {
@@ -208,7 +224,7 @@
   justify-content: center;
   background: radial-gradient(
     ellipse at center,
-    #1a1a4e 0%,
+    #1e3a14 0%,
     var(--pixel-darker) 100%
   );
   font-size: 3.5rem;
@@ -293,10 +309,12 @@
 }
 
 /* ══════════════════════════════════════
-   STATS BAR
+   STATS BAR — Tavern scoreboard
    ══════════════════════════════════════ */
 .projects-stats {
-  background: rgba(10, 10, 30, 0.6);
+  background: rgba(15, 10, 4, 0.7);
+  border-top: 2px solid var(--pixel-border);
+  border-bottom: 2px solid var(--pixel-border);
 }
 .pstat-num {
   font-family: var(--font-pixel);
@@ -384,7 +402,7 @@
   font-size: 5rem;
   background: radial-gradient(
     ellipse at center,
-    #1a1a4e 0%,
+    #1e3a14 0%,
     var(--pixel-darker) 100%
   );
 }

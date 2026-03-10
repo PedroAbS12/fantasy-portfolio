@@ -76,8 +76,8 @@
 }
 
 .xp-bar-fill.bar-purple {
-  background: linear-gradient(90deg, #2a0a5e, var(--pixel-violet));
-  box-shadow: 0 0 8px var(--pixel-violet);
+  background: linear-gradient(90deg, #3a2a60, var(--pixel-violet));
+  box-shadow: 0 0 8px rgba(160, 180, 216, 0.5);
 }
 
 /* ── Legend ── */

@@ -36,18 +36,18 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue'
-import NavBar               from './components/NavBar.vue'
-import HeroSection          from './components/HeroSection.vue'
-import SkillsSection        from './components/SkillsSection.vue'
-import ProjectsSection      from './components/ProjectsSection.vue'
-import ExperienceSection    from './components/ExperienceSection.vue'
-import ContactSection       from './components/ContactSection.vue'
-import FooterSection        from './components/FooterSection.vue'
-import CertificationsSection from './components/CertificationsSection.vue'
+import { ref, onMounted } from "vue";
+import NavBar from "./components/NavBar.vue";
+import HeroSection from "./components/HeroSection.vue";
+import SkillsSection from "./components/SkillsSection.vue";
+import ProjectsSection from "./components/ProjectsSection.vue";
+import ExperienceSection from "./components/ExperienceSection.vue";
+import ContactSection from "./components/ContactSection.vue";
+import FooterSection from "./components/FooterSection.vue";
+import CertificationsSection from "./components/CertificationsSection.vue";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
     NavBar,
@@ -61,21 +61,23 @@ export default {
   },
 
   setup() {
-    const booting      = ref(true)
-    const bootProgress = ref(0)
+    const booting = ref(true);
+    const bootProgress = ref(0);
 
     onMounted(() => {
       const interval = setInterval(() => {
-        bootProgress.value += Math.floor(Math.random() * 15) + 5
+        bootProgress.value += Math.floor(Math.random() * 15) + 5;
         if (bootProgress.value >= 100) {
-          bootProgress.value = 100
-          clearInterval(interval)
-          setTimeout(() => { booting.value = false }, 400)
+          bootProgress.value = 100;
+          clearInterval(interval);
+          setTimeout(() => {
+            booting.value = false;
+          }, 400);
         }
-      }, 120)
-    })
+      }, 120);
+    });
 
-    return { booting, bootProgress }
+    return { booting, bootProgress };
   },
-}
+};
 </script>
