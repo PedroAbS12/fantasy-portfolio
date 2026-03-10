@@ -6,54 +6,61 @@
       "color": "gold"
     },
     {
-      "id": "siemens",
-      "name": "⚙️ SIEMENS",
-      "color": "cyan"
-    },
-    {
       "id": "data",
       "name": "🔮 Data & Analytics",
       "color": "purple"
     },
     {
-      "id": "cloud",
-      "name": "☁️ Cloud & DevOps",
-      "color": "green"
+      "id": "siemens",
+      "name": "⚙️ SIEMENS",
+      "color": "cyan"
     }
   ],
   "certifications": [
     {
       "id": 1,
-      "title": "Vue.js Developer Certification",
-      "issuer": "Vue School",
+      "title": "HTML & CSS",
+      "issuer": "Platzi",
       "category": "web",
-      "date": "2024",
-      "credentialId": "VS-2024-XXXX",
-      "image": "",
-      "verifyUrl": "https://vueschool.io/certificates/...",
-      "skills": ["Vue 3", "Composition API", "Pinia"]
+      "date": "2025",
+      "image": "/src/assets/pictures/certificates/html-css.png",
+      "skills": ["HTML", "CSS", "JS"]
     },
     {
       "id": 2,
-      "title": "SIEMENS TIA Portal S7-1200",
-      "issuer": "Siemens AG",
-      "category": "siemens",
-      "date": "2023",
-      "credentialId": "SIE-TIA-XXXX",
-      "image": "",
-      "verifyUrl": "",
-      "skills": ["TIA Portal", "PLC", "Ladder Logic"]
+      "title": "Terminal y líneas de comando",
+      "issuer": "Platzi",
+      "category": "web",
+      "date": "2026",
+      "image": "/src/assets/pictures/certificates/terminal.png",
+      "skills": ["Linux", "Terminal"]
     },
     {
       "id": 3,
-      "title": "Google Data Analytics",
-      "issuer": "Google / Coursera",
+      "title": "SQL y MySQL",
+      "issuer": "Platzi",
       "category": "data",
+      "date": "2025",
+      "image": "/src/assets/pictures/certificates/my-sql.png",
+      "skills": ["SQL", "QUERY", "MYSQL"]
+    },
+    {
+      "id": 4,
+      "title": "Insights Hub Associate",
+      "issuer": "SIEMENS Xcelerator Academy",
+      "category": "siemens",
+      "date": "2025",
+      "image": "/src/assets/pictures/certificates/insights-hub.png",
+      "skills": ["TIA Portal", "PLC", "Ladder Logic", "Mindsphere"]
+    },
+    {
+      "id": 5,
+      "title": "Plant Simulation Associate",
+      "issuer": "SIEMENS Xcelerator Academy",
+      "category": "siemens",
       "date": "2023",
-      "credentialId": "GDA-XXXX",
-      "image": "",
-      "verifyUrl": "https://coursera.org/verify/...",
-      "skills": ["SQL", "Tableau", "R", "Data Cleaning"]
+      "image": "/src/assets/pictures/certificates/plant-simulation.png",
+      "skills": ["Plant Simulation", "TIA Portal", "PLC", "Ladder Logic"]
     }
   ]
 }
