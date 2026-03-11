@@ -29,7 +29,6 @@
 .skill-row {
   animation: slide-up 0.4s ease both;
 }
-
 .skill-name {
   font-family: var(--font-retro);
   font-size: 1.1rem;
@@ -58,6 +57,7 @@
   color: var(--pixel-violet);
 }
 
+/* Bar tick markers */
 .bar-markers {
   position: absolute;
   inset: 0;
@@ -71,16 +71,7 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-.xp-bar-wrap {
-  position: relative;
-}
-
-.xp-bar-fill.bar-purple {
-  background: linear-gradient(90deg, #3a2a60, var(--pixel-violet));
-  box-shadow: 0 0 8px rgba(160, 180, 216, 0.5);
-}
-
-/* ── Legend ── */
+/* Legend */
 .legend-item {
   display: flex;
   align-items: center;
@@ -96,7 +87,7 @@
   color: var(--pixel-gray);
 }
 
-/* ── Transitions ── */
+/* Transitions */
 .skills-fade-enter-active {
   transition: all 0.3s ease;
 }

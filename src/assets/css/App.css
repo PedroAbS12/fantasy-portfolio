@@ -1,18 +1,15 @@
 /* ============================================
-   APP.CSS — Boot Screen & App Shell
-   Village gate loading sequence
+   APP.CSS — Boot Screen / Loading gate
    ============================================ */
 
 .boot-screen {
   position: fixed;
   inset: 0;
-  background: var(--pixel-darker);
   z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* Warm dawn sky radiating from center */
   background: radial-gradient(
     ellipse 80% 60% at 50% 50%,
     #1e1408 0%,

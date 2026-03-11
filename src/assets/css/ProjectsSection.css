@@ -1,18 +1,16 @@
 /* ============================================
-   PROJECTSSECTION.CSS — Quest Board / Village Notice
+   PROJECTSSECTION.CSS — Quest Board
    ============================================ */
 
-/* Forest mist background between buildings */
 .projects-bg {
   background: linear-gradient(
     180deg,
     transparent,
-    rgba(15, 35, 10, 0.4),
+    rgba(15, 35, 10, 0.35),
     transparent
   );
+  position: relative;
 }
-
-/* Village cobblestone path between card sections */
 .projects-bg::before {
   content: "";
   position: absolute;
@@ -27,13 +25,10 @@
   pointer-events: none;
 }
 
-/* ══════════════════════════════════════
-   ORIGIN TABS  (Académico / Laboral / Personal)
-   ══════════════════════════════════════ */
+/* ── Origin tabs ── */
 .origin-tabs {
   gap: 0.5rem;
 }
-
 .origin-tab {
   display: flex;
   align-items: center;
@@ -49,29 +44,17 @@
   transition: all 0.08s steps(1);
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  position: relative;
 }
-
 .origin-tab:hover {
   color: var(--pixel-white);
   border-color: var(--pixel-gray);
   transform: translate(-1px, -1px);
   box-shadow: 5px 5px 0 #000;
 }
-
 .origin-tab--active {
   box-shadow: 2px 2px 0 #000 !important;
   transform: translate(2px, 2px) !important;
 }
-
-/* Académico → gold */
-.origin-tab:nth-child(2).origin-tab--active,
-.origin-tab--active:has(.origin-tab__icon:first-child) {
-  border-color: var(--pixel-gold);
-  color: var(--pixel-gold);
-  background: rgba(255, 215, 0, 0.08);
-}
-/* fallback: target by order since :has may not be supported everywhere */
 .origin-tabs .origin-tab:nth-child(1).origin-tab--active {
   border-color: var(--pixel-white);
   color: var(--pixel-white);
@@ -85,18 +68,16 @@
 .origin-tabs .origin-tab:nth-child(3).origin-tab--active {
   border-color: var(--pixel-cyan);
   color: var(--pixel-cyan);
-  background: rgba(106, 176, 216, 0.1);
+  background: rgba(0, 204, 255, 0.08);
 }
 .origin-tabs .origin-tab:nth-child(4).origin-tab--active {
   border-color: var(--pixel-green);
   color: var(--pixel-green);
-  background: rgba(74, 140, 58, 0.1);
+  background: rgba(0, 204, 102, 0.08);
 }
 
 .origin-tab__icon {
   font-size: 1rem;
-}
-.origin-tab__label {
 }
 .origin-tab__count {
   font-size: 0.38rem;
@@ -106,9 +87,7 @@
   opacity: 0.8;
 }
 
-/* ══════════════════════════════════════
-   CATEGORY FILTER BUTTONS
-   ══════════════════════════════════════ */
+/* ── Category filters ── */
 .category-btn {
   font-size: 0.42rem !important;
   padding: 7px 12px !important;
@@ -118,7 +97,6 @@
   opacity: 0.7;
   margin-left: 3px;
 }
-
 .active-filter {
   background: var(--pixel-gold) !important;
   color: var(--pixel-dark) !important;
@@ -126,9 +104,7 @@
   box-shadow: 2px 2px 0 var(--pixel-gold-dark) !important;
 }
 
-/* ══════════════════════════════════════
-   CARDS
-   ══════════════════════════════════════ */
+/* ── Cards ── */
 .project-card {
   cursor: pointer;
   transition:
@@ -147,7 +123,6 @@
   animation: pulse-glow 3s ease-in-out infinite;
 }
 
-/* Border accent by origin */
 .origin-border--academic {
   border-top: 4px solid var(--pixel-gold) !important;
 }
@@ -158,7 +133,7 @@
   border-top: 4px solid var(--pixel-green) !important;
 }
 
-/* ── Badges row ── */
+/* Badges row */
 .card-badges {
   position: absolute;
   top: 0;
@@ -170,7 +145,6 @@
   z-index: 2;
   pointer-events: none;
 }
-
 .featured-badge {
   font-family: var(--font-pixel);
   font-size: 0.38rem;
@@ -178,7 +152,6 @@
   color: var(--pixel-dark);
   padding: 3px 8px;
 }
-
 .origin-badge {
   font-family: var(--font-pixel);
   font-size: 0.35rem;
@@ -198,7 +171,7 @@
   color: var(--pixel-dark);
 }
 
-/* ── Image ── */
+/* Image */
 .project-image-wrap {
   position: relative;
   overflow: hidden;
@@ -215,7 +188,6 @@
 .project-card:hover .project-img {
   transform: scale(1.05);
 }
-
 .project-img-placeholder {
   width: 100%;
   height: 100%;
@@ -229,7 +201,6 @@
   );
   font-size: 3.5rem;
 }
-
 .image-overlay {
   position: absolute;
   inset: 0;
@@ -249,7 +220,7 @@
   color: var(--pixel-gold);
 }
 
-/* ── Card text ── */
+/* Card text */
 .project-title {
   font-size: 0.58rem;
   color: var(--pixel-white);
@@ -266,12 +237,6 @@
   color: var(--pixel-gray);
   line-height: 1.6;
 }
-
-.difficulty-badge {
-  font-size: 1.2rem;
-  flex-shrink: 0;
-}
-
 .project-year {
   font-family: var(--font-pixel);
   font-size: 0.38rem;
@@ -293,6 +258,10 @@
   color: var(--pixel-gray);
 }
 
+.difficulty-badge {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
 .badge-gray {
   border-color: var(--pixel-gray);
   color: var(--pixel-gray);
@@ -308,9 +277,7 @@
   align-self: center;
 }
 
-/* ══════════════════════════════════════
-   STATS BAR — Tavern scoreboard
-   ══════════════════════════════════════ */
+/* Stats bar */
 .projects-stats {
   background: rgba(15, 10, 4, 0.7);
   border-top: 2px solid var(--pixel-border);
@@ -339,9 +306,7 @@
   text-shadow: 0 0 10px var(--pixel-green);
 }
 
-/* ══════════════════════════════════════
-   EMPTY STATE
-   ══════════════════════════════════════ */
+/* Empty state */
 .empty-icon {
   font-size: 3rem;
 }
@@ -351,9 +316,7 @@
   color: var(--pixel-gray);
 }
 
-/* ══════════════════════════════════════
-   MODAL
-   ══════════════════════════════════════ */
+/* Modal */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -379,7 +342,6 @@
   right: 1rem;
   z-index: 10;
 }
-
 .modal-img-wrap {
   position: relative;
   height: 220px;
@@ -406,7 +368,6 @@
     var(--pixel-darker) 100%
   );
 }
-
 .modal-origin-ribbon {
   position: absolute;
   bottom: 0;
@@ -416,7 +377,6 @@
   padding: 5px 14px;
   letter-spacing: 0.08em;
 }
-
 .modal-title {
   font-size: 0.75rem;
   color: var(--pixel-gold);
@@ -463,9 +423,7 @@
   color: var(--pixel-gray);
 }
 
-/* ══════════════════════════════════════
-   TRANSITIONS
-   ══════════════════════════════════════ */
+/* Transitions */
 .modal-fade-enter-active,
 .modal-fade-leave-active {
   transition: all 0.2s ease;
@@ -475,7 +433,6 @@
   opacity: 0;
   transform: scale(0.95);
 }
-
 .project-anim-enter-active {
   transition: all 0.25s ease;
 }

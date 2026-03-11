@@ -1,56 +1,40 @@
 /* ============================================
-   MEDIEVAL FANTASY THEME — Overworld RPG
-   Palette inspired by pixel-art village scene:
-   daylight sky, terracotta roofs, warm timber,
-   cobblestone paths, lush greens, misty peaks.
+   OVERWORLD THEME — Medieval Landscape / Daylight
+   Open fields, cobblestone villages, blue sky,
+   warm timber, lush greens, parchment tones.
+   Applied via [data-theme="medieval"]
    ============================================ */
 
 [data-theme="medieval"] {
-  /* ── Color Palette ── */
-  /* Darkest backgrounds — deep timber shadow */
-  --pixel-dark: #1c1208;
-  --pixel-darker: #100c05;
-  /* Warm wood / half-timber wall tone */
-  --pixel-navy: #3b2710;
-  /* Sky blue — cobalt daytime sky from image */
-  --pixel-blue: #4a7fc1;
-  /* Dusk violet — distant mountain mist */
-  --pixel-purple: #7a8fc4;
-  /* Mountain haze highlight */
-  --pixel-violet: #a0b4d8;
-  /* Sunlit amber — wooden sign boards & beams */
-  --pixel-gold: #c8922a;
-  /* Deep amber shadow — darker timber beams */
-  --pixel-gold-dark: #7a5518;
-  /* Warm terracotta — roof tiles */
-  --pixel-amber: #b85c3a;
-  /* Brick red — chimney & accent stonework */
-  --pixel-red: #8c3a2a;
-  /* Lush foliage green — treetops & ivy */
-  --pixel-green: #4a8c3a;
-  /* Sky highlight / cloud teal accent */
-  --pixel-cyan: #6ab0d8;
-  /* Cobblestone path — mid warm stone */
-  --pixel-pink: #a08060;
-  /* Parchment / plaster wall tone */
-  --pixel-white: #f0e4c0;
-  /* Worn stone gray — walls & borders */
-  --pixel-gray: #8a8070;
-  /* Mortar line / border — cool stone shadow */
-  --pixel-border: #5a5040;
+  /* ── Backgrounds ── */
+  --pixel-dark: #e9f2f6; /* Sky mist background */
+  --pixel-darker: #d8e7ee; /* Soft cloud tone */
+  --pixel-navy: #f5f9fb; /* Snow / light surface */
+  --pixel-blue: #5693a9; /* Main sky blue */
 
-  /* ── Fonts ── */
-  --font-pixel: "MedievalSharp", "Cinzel Decorative", serif;
-  --font-retro: "IM Fell English", "Palatino Linotype", serif;
-  --font-clean: "Cinzel", serif;
+  /* ── Accents ── */
+  --pixel-purple: #7fa6b8; /* Distant mountains */
+  --pixel-violet: #5e7f95; /* Mountain shadow */
+  --pixel-gold: #8f6700; /* Castle highlight */
+  --pixel-gold-dark: #936508; /* Warm stone shadow */
+  --pixel-amber: #7e6c51; /* Light stone */
+  --pixel-red: #3e3529; /* Dark stone */
+  --pixel-green: #6f8f6b; /* Distant forest */
+  --pixel-cyan: #7fb6cc; /* Atmospheric sky */
+  --pixel-pink: #cfd8dc; /* Snow reflection */
+
+  /* ── Text & UI ── */
+  --pixel-white: #2f3a40; /* Dark slate text */
+  --pixel-gray: #6b7c86; /* Secondary text */
+  --pixel-border: #b7c9d3; /* Frosty border */
 
   /* ── Shadows ── */
-  --shadow-pixel: 4px 4px 0px #000;
+  --shadow-pixel: 4px 4px 0px rgba(29, 26, 26, 0.2);
   --shadow-gold: 4px 4px 0px var(--pixel-gold-dark);
   --shadow-glow:
-    0 0 20px rgba(200, 146, 42, 0.45), 0 0 40px rgba(200, 146, 42, 0.2);
-  --shadow-blue: 0 0 20px rgba(106, 176, 216, 0.45);
-  --shadow-purple: 0 0 20px rgba(122, 143, 196, 0.5);
+    0 0 20px rgba(158, 199, 214, 0.35), 0 0 40px rgba(158, 199, 214, 0.15);
+  --shadow-blue: 0 0 20px rgba(127, 182, 204, 0.35);
+  --shadow-purple: 0 0 20px rgba(94, 127, 149, 0.4);
 }
 
 /* ══════════════════════════════════════
@@ -58,146 +42,133 @@
    ══════════════════════════════════════ */
 
 [data-theme="medieval"] body {
-  background-color: #1c1208;
+  background-color: var(--pixel-dark);
   color: var(--pixel-white);
-  font-family: var(--font-retro);
-  cursor:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath d='M4 2 L4 14 L7 11 L9 16 L11 15 L9 10 L13 10 Z' fill='%23c8922a' stroke='%23000' stroke-width='1'/%3E%3C/svg%3E")
-      4 2,
-    crosshair;
 }
 
-/* ── Daylight sky ambient dots (sun-dappled light) ── */
+/* Daylight ambient — sun-dappled light particles */
 [data-theme="medieval"] body::before {
   background-image:
     radial-gradient(
-      2px 2px at 5% 10%,
-      rgba(200, 146, 42, 0.4) 0%,
+      3px 3px at 10% 15%,
+      rgba(200, 150, 50, 0.5) 0%,
       transparent 100%
     ),
     radial-gradient(
-      1px 1px at 20% 40%,
-      rgba(106, 176, 216, 0.3) 0%,
+      2px 2px at 30% 40%,
+      rgba(106, 176, 216, 0.4) 0%,
       transparent 100%
     ),
     radial-gradient(
-      2px 2px at 35% 8%,
-      rgba(240, 228, 192, 0.35) 0%,
+      3px 3px at 50% 8%,
+      rgba(240, 200, 100, 0.45) 0%,
       transparent 100%
     ),
     radial-gradient(
-      1px 1px at 55% 65%,
-      rgba(200, 146, 42, 0.35) 0%,
+      2px 2px at 65% 60%,
+      rgba(58, 122, 42, 0.3) 0%,
       transparent 100%
     ),
     radial-gradient(
-      2px 2px at 70% 25%,
-      rgba(74, 140, 58, 0.25) 0%,
+      3px 3px at 80% 25%,
+      rgba(200, 150, 50, 0.4) 0%,
       transparent 100%
     ),
     radial-gradient(
-      2px 2px at 80% 50%,
-      rgba(106, 176, 216, 0.3) 0%,
-      transparent 100%
-    ),
-    radial-gradient(
-      1px 1px at 92% 18%,
-      rgba(200, 146, 42, 0.4) 0%,
-      transparent 100%
-    ),
-    radial-gradient(
-      1px 1px at 12% 75%,
-      rgba(240, 228, 192, 0.2) 0%,
-      transparent 100%
-    ),
-    radial-gradient(
-      1px 1px at 48% 88%,
-      rgba(200, 146, 42, 0.25) 0%,
-      transparent 100%
-    ),
-    radial-gradient(
-      2px 2px at 65% 3%,
+      2px 2px at 90% 50%,
       rgba(106, 176, 216, 0.35) 0%,
       transparent 100%
+    ),
+    radial-gradient(
+      2px 2px at 20% 75%,
+      rgba(240, 200, 100, 0.3) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      3px 3px at 45% 88%,
+      rgba(58, 122, 42, 0.25) 0%,
+      transparent 100%
+    ),
+    radial-gradient(
+      2px 2px at 70% 5%,
+      rgba(200, 150, 50, 0.4) 0%,
+      transparent 100%
     );
-  animation: twinkle 5s ease-in-out infinite alternate;
+  animation: sunlight-drift 6s ease-in-out infinite alternate;
 }
 
-/* ── Parchment texture overlay ── */
+@keyframes sunlight-drift {
+  0% {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateY(-3px);
+  }
+}
+
+/* Subtle parchment texture */
 [data-theme="medieval"] body::after {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
   pointer-events: none;
   z-index: 1;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
-/* ══════════════════════════════════════
-   SCROLLBAR
-   ══════════════════════════════════════ */
+/* ── Scrollbar ── */
+[data-theme="medieval"] ::-webkit-scrollbar-track {
+  background: var(--pixel-darker);
+}
 [data-theme="medieval"] ::-webkit-scrollbar-thumb {
   background: var(--pixel-gold);
-  border: 2px solid var(--pixel-dark);
+  border-color: var(--pixel-dark);
 }
 
 /* ══════════════════════════════════════
-   PIXEL BOX → TIMBER-FRAMED BUILDING PANEL
+   PIXEL BOX → TIMBER-FRAMED PANEL
    ══════════════════════════════════════ */
 [data-theme="medieval"] .pixel-box {
-  background: linear-gradient(145deg, #2e1e0c 0%, #1c1208 100%);
-  border: 3px solid var(--pixel-border);
+  background: linear-gradient(
+    145deg,
+    var(--pixel-navy) 0%,
+    var(--pixel-darker) 100%
+  );
+  border-color: var(--pixel-border);
   box-shadow:
     var(--shadow-pixel),
-    inset 0 0 30px rgba(0, 0, 0, 0.5),
-    inset 0 1px 0 rgba(200, 146, 42, 0.18);
-  position: relative;
+    inset 0 0 20px rgba(87, 87, 87, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
-
-/* Stone corner runes */
+/* Diamond corner rivets */
 [data-theme="medieval"] .pixel-box::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 8px;
-  height: 8px;
-  background: var(--pixel-gold);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  background: var(--pixel-gold);
   box-shadow:
     calc(100% - 8px - 8px) 0 0 var(--pixel-gold),
     0 calc(100% - 8px - 8px) 0 var(--pixel-gold),
     calc(100% - 8px - 8px) calc(100% - 8px - 8px) 0 var(--pixel-gold);
 }
-
-/* Worn stone texture line */
 [data-theme="medieval"] .pixel-box::before {
-  content: "";
-  position: absolute;
   inset: 6px;
-  border: 1px solid rgba(212, 160, 23, 0.12);
-  pointer-events: none;
+  border: 1px solid rgba(154, 108, 26, 0.15);
 }
 
 /* ══════════════════════════════════════
-   PIXEL BUTTON → RPG RUNE BUTTON
+   PIXEL BUTTON → CARVED STONE / WOOD
    ══════════════════════════════════════ */
 [data-theme="medieval"] .pixel-btn {
-  font-family: var(--font-clean);
-  font-size: 0.55rem;
-  letter-spacing: 0.12em;
-  padding: 10px 18px;
-  border: 3px solid var(--pixel-gold);
-  background: linear-gradient(180deg, #3c2810 0%, #221408 100%);
+  background: linear-gradient(
+    180deg,
+    var(--pixel-navy) 0%,
+    var(--pixel-darker) 100%
+  );
+  border-color: var(--pixel-gold);
   color: var(--pixel-gold);
-  cursor: pointer;
   box-shadow: 4px 4px 0 var(--pixel-gold-dark);
-  transition: all 0.08s steps(1);
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  text-transform: uppercase;
   clip-path: polygon(
     6px 0%,
     calc(100% - 6px) 0%,
@@ -209,73 +180,47 @@
     0% 6px
   );
 }
-
-[data-theme="medieval"] .pixel-btn::before {
-  content: "⚔";
-  position: absolute;
-  left: 6px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 0.6rem;
-  opacity: 0;
-  transition: opacity 0.1s;
-}
-
 [data-theme="medieval"] .pixel-btn:hover {
   background: linear-gradient(
     180deg,
     var(--pixel-gold) 0%,
     var(--pixel-amber) 100%
   );
-  color: var(--pixel-dark);
-  box-shadow: 2px 2px 0 var(--pixel-gold-dark);
-  transform: translate(2px, 2px);
+  color: var(--pixel-darker);
 }
-[data-theme="medieval"] .pixel-btn:hover::before {
-  opacity: 0.6;
-}
-
 [data-theme="medieval"] .pixel-btn.btn-cyan-px {
   border-color: var(--pixel-cyan);
   color: var(--pixel-cyan);
-  box-shadow: 4px 4px 0 #1a4a3a;
+  box-shadow: 4px 4px 0 #1a4060;
 }
 [data-theme="medieval"] .pixel-btn.btn-cyan-px:hover {
-  background: linear-gradient(180deg, var(--pixel-cyan) 0%, #2a7a6a 100%);
-  color: var(--pixel-dark);
+  background: var(--pixel-cyan);
+  color: var(--pixel-darker);
 }
-
 [data-theme="medieval"] .pixel-btn.btn-danger-px {
   border-color: var(--pixel-red);
   color: var(--pixel-red);
-  box-shadow: 4px 4px 0 #3a0808;
+  box-shadow: 4px 4px 0 #4a1010;
 }
 [data-theme="medieval"] .pixel-btn.btn-danger-px:hover {
   background: var(--pixel-red);
-  color: var(--pixel-white);
+  color: var(--pixel-darker);
 }
 
 /* ══════════════════════════════════════
-   SECTION TITLE → SCROLL/BANNER
+   SECTION TITLE → SCROLL / BANNER
    ══════════════════════════════════════ */
 [data-theme="medieval"] .section-title {
-  font-family: var(--font-clean);
   color: var(--pixel-gold);
-  letter-spacing: 0.15em;
-  text-shadow:
-    2px 2px 0 var(--pixel-gold-dark),
-    0 0 20px rgba(212, 160, 23, 0.4);
-  padding-bottom: 1.2rem;
+  letter-spacing: 0.12em;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
-
 [data-theme="medieval"] .section-title::before {
   content: "⚜";
   margin-right: 0.6em;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 [data-theme="medieval"] .section-title::after {
-  content: "";
-  display: block;
   width: 220px;
   height: 6px;
   background: linear-gradient(
@@ -286,8 +231,7 @@
     var(--pixel-gold-dark) 80%,
     transparent
   );
-  margin: 1rem auto 0;
-  box-shadow: 0 0 12px var(--pixel-gold);
+  box-shadow: 0 0 10px rgba(154, 108, 26, 0.4);
   clip-path: polygon(
     4px 0%,
     calc(100% - 4px) 0%,
@@ -299,152 +243,9 @@
 }
 
 /* ══════════════════════════════════════
-   NAVBAR → CASTLE RAMPART STYLE
+   BADGES
    ══════════════════════════════════════ */
-[data-theme="medieval"] .pixel-navbar {
-  background: rgba(16, 12, 5, 0.88);
-  border-bottom: 3px solid var(--pixel-border);
-  backdrop-filter: blur(12px);
-  background-image: linear-gradient(
-    180deg,
-    rgba(200, 146, 42, 0.05) 0%,
-    transparent 100%
-  );
-}
-
-[data-theme="medieval"] .pixel-navbar.scrolled {
-  background: rgba(16, 12, 5, 0.97);
-  border-bottom-color: var(--pixel-gold);
-  box-shadow: 0 4px 20px rgba(200, 146, 42, 0.28);
-}
-
-/* Battlements decoration on top */
-[data-theme="medieval"] .pixel-navbar::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: repeating-linear-gradient(
-    90deg,
-    var(--pixel-gold) 0px,
-    var(--pixel-gold) 8px,
-    transparent 8px,
-    transparent 16px
-  );
-  opacity: 0.5;
-}
-
-[data-theme="medieval"] .nav-brand {
-  font-family: var(--font-clean);
-  font-size: 0.8rem;
-  color: var(--pixel-gold);
-  text-shadow: 0 0 15px rgba(212, 160, 23, 0.6);
-  letter-spacing: 0.15em;
-}
-
-[data-theme="medieval"] .nav-scanline {
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--pixel-gold),
-    transparent
-  );
-  opacity: 0.5;
-}
-
-[data-theme="medieval"] .nav-link-px {
-  font-family: var(--font-clean);
-  font-size: 0.42rem;
-  letter-spacing: 0.08em;
-  color: var(--pixel-gray);
-  border: 2px solid transparent;
-}
-[data-theme="medieval"] .nav-link-px:hover,
-[data-theme="medieval"] .nav-link-px.active {
-  color: var(--pixel-gold);
-  border-color: var(--pixel-gold);
-  background: rgba(212, 160, 23, 0.1);
-  box-shadow:
-    2px 2px 0 var(--pixel-gold-dark),
-    0 0 12px rgba(212, 160, 23, 0.25);
-}
-
-[data-theme="medieval"] .mobile-menu-btn {
-  border-color: var(--pixel-gold);
-  color: var(--pixel-gold);
-  font-family: var(--font-clean);
-}
-
-[data-theme="medieval"] .mobile-nav-link {
-  font-family: var(--font-clean);
-  font-size: 0.48rem;
-  border-bottom: 1px solid var(--pixel-border);
-}
-[data-theme="medieval"] .mobile-nav-link:hover,
-[data-theme="medieval"] .mobile-nav-link.active {
-  color: var(--pixel-gold);
-}
-
-/* ══════════════════════════════════════
-   HERO SECTION
-   ══════════════════════════════════════ */
-[data-theme="medieval"] .hero-section {
-  background:
-    radial-gradient(
-      ellipse at 50% 100%,
-      rgba(74, 140, 58, 0.25) 0%,
-      transparent 60%
-    ),
-    radial-gradient(
-      ellipse at 50% 0%,
-      rgba(106, 176, 216, 0.18) 0%,
-      transparent 70%
-    ),
-    radial-gradient(
-      ellipse at 20% 50%,
-      rgba(28, 18, 8, 0.7) 0%,
-      transparent 70%
-    );
-}
-
-[data-theme="medieval"] .avatar-frame {
-  border-color: var(--pixel-gold);
-  box-shadow:
-    0 0 20px rgba(212, 160, 23, 0.4),
-    inset 0 0 15px rgba(0, 0, 0, 0.6),
-    0 0 0 4px rgba(90, 74, 46, 0.5);
-  clip-path: polygon(
-    12px 0%,
-    calc(100% - 12px) 0%,
-    100% 12px,
-    100% calc(100% - 12px),
-    calc(100% - 12px) 100%,
-    12px 100%,
-    0% calc(100% - 12px),
-    0% 12px
-  );
-}
-
-[data-theme="medieval"] .avatar-bg {
-  background: radial-gradient(
-    ellipse at 50% 100%,
-    #1e3a14 0%,
-    #122210 50%,
-    #100c05 100%
-  );
-}
-
-[data-theme="medieval"] .avatar-bg::before {
-  background-image:
-    linear-gradient(rgba(74, 140, 58, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(74, 140, 58, 0.07) 1px, transparent 1px);
-}
-
-[data-theme="medieval"] .level-badge {
-  border-color: var(--pixel-gold);
-  background: rgba(14, 10, 5, 0.9);
+[data-theme="medieval"] .pixel-badge {
   clip-path: polygon(
     4px 0%,
     calc(100% - 4px) 0%,
@@ -457,23 +258,202 @@
   );
 }
 
+/* ══════════════════════════════════════
+   XP BARS
+   ══════════════════════════════════════ */
+[data-theme="medieval"] .xp-bar-wrap {
+  background: var(--pixel-darker);
+  border-color: var(--pixel-border);
+  clip-path: polygon(
+    3px 0%,
+    calc(100% - 3px) 0%,
+    100% 3px,
+    100% calc(100% - 3px),
+    calc(100% - 3px) 100%,
+    3px 100%,
+    0% calc(100% - 3px),
+    0% 3px
+  );
+}
+[data-theme="medieval"] .xp-bar-fill {
+  background: linear-gradient(
+    90deg,
+    var(--pixel-gold-dark),
+    var(--pixel-gold),
+    var(--pixel-amber)
+  );
+  box-shadow: 0 0 6px rgba(154, 108, 26, 0.5);
+}
+[data-theme="medieval"] .xp-bar-fill.bar-cyan {
+  background: linear-gradient(90deg, #1a4060, var(--pixel-cyan));
+  box-shadow: 0 0 6px var(--pixel-cyan);
+}
+[data-theme="medieval"] .xp-bar-fill.bar-green {
+  background: linear-gradient(90deg, #1a3a1a, var(--pixel-green));
+  box-shadow: 0 0 6px var(--pixel-green);
+}
+[data-theme="medieval"] .xp-bar-fill.bar-purple {
+  background: linear-gradient(90deg, #2a2a50, var(--pixel-violet));
+  box-shadow: 0 0 6px var(--pixel-violet);
+}
+
+/* ══════════════════════════════════════
+   DIVIDER
+   ══════════════════════════════════════ */
+[data-theme="medieval"] .pixel-divider {
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--pixel-gold-dark) 5%,
+    var(--pixel-gold) 20%,
+    var(--pixel-amber) 50%,
+    var(--pixel-gold) 80%,
+    var(--pixel-gold-dark) 95%,
+    transparent 100%
+  );
+  box-shadow: 0 0 8px rgba(154, 108, 26, 0.4);
+  clip-path: polygon(
+    4px 0%,
+    calc(100% - 4px) 0%,
+    100% 50%,
+    calc(100% - 4px) 100%,
+    4px 100%,
+    0% 50%
+  );
+}
+
+/* ══════════════════════════════════════
+   NAVBAR → CASTLE RAMPART (LIGHT)
+   ══════════════════════════════════════ */
+[data-theme="medieval"] .pixel-navbar {
+  background: rgba(235, 220, 195, 0.92);
+  border-bottom: 3px solid var(--pixel-border);
+  backdrop-filter: blur(12px);
+}
+[data-theme="medieval"] .pixel-navbar.scrolled {
+  background: rgba(235, 220, 195, 0.98);
+  border-bottom-color: var(--pixel-gold);
+  box-shadow: 0 4px 20px rgba(154, 108, 26, 0.2);
+}
+[data-theme="medieval"] .pixel-navbar::before {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--pixel-gold) 0px,
+    var(--pixel-gold) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+  opacity: 0.4;
+}
+[data-theme="medieval"] .nav-scanline {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--pixel-gold),
+    transparent
+  );
+  opacity: 0.4;
+}
+[data-theme="medieval"] .nav-brand {
+  color: var(--pixel-gold);
+}
+[data-theme="medieval"] .brand-cursor {
+  color: var(--pixel-gold);
+}
+[data-theme="medieval"] .nav-link-px {
+  color: var(--pixel-gray);
+}
+[data-theme="medieval"] .nav-link-px:hover,
+[data-theme="medieval"] .nav-link-px.active {
+  color: var(--pixel-gold);
+  border-color: var(--pixel-gold);
+  background: rgba(154, 108, 26, 0.1);
+  box-shadow:
+    2px 2px 0 var(--pixel-gold-dark),
+    0 0 10px rgba(154, 108, 26, 0.2);
+}
+[data-theme="medieval"] .mobile-menu-btn {
+  border-color: var(--pixel-gold);
+  color: var(--pixel-gold);
+}
+[data-theme="medieval"] .mobile-nav {
+  background: rgba(235, 220, 195, 0.98);
+}
+[data-theme="medieval"] .mobile-nav-link {
+  color: var(--pixel-gray);
+  border-bottom-color: var(--pixel-border);
+}
+[data-theme="medieval"] .mobile-nav-link:hover,
+[data-theme="medieval"] .mobile-nav-link.active {
+  color: var(--pixel-gold);
+  background: rgba(154, 108, 26, 0.06);
+}
+[data-theme="medieval"] .nav-emoji {
+  animation: torch-flicker 4s ease-in-out infinite;
+}
+
+/* ══════════════════════════════════════
+   HERO
+   ══════════════════════════════════════ */
+[data-theme="medieval"] .hero-section {
+  background:
+    radial-gradient(
+      ellipse at 50% 100%,
+      rgba(58, 122, 42, 0.2) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(106, 176, 216, 0.15) 0%,
+      transparent 70%
+    );
+}
+[data-theme="medieval"] .avatar-frame {
+  border-color: var(--pixel-gold);
+  box-shadow:
+    0 0 15px rgba(154, 108, 26, 0.3),
+    inset 0 0 10px rgba(0, 0, 0, 0.1),
+    0 0 0 4px rgba(184, 160, 128, 0.4);
+  clip-path: polygon(
+    12px 0%,
+    calc(100% - 12px) 0%,
+    100% 12px,
+    100% calc(100% - 12px),
+    calc(100% - 12px) 100%,
+    12px 100%,
+    0% calc(100% - 12px),
+    0% 12px
+  );
+}
+[data-theme="medieval"] .avatar-bg {
+  background: radial-gradient(
+    ellipse at 50% 100%,
+    #c8dca8 0%,
+    #a8c888 50%,
+    var(--pixel-darker) 100%
+  );
+}
+[data-theme="medieval"] .level-badge {
+  border-color: var(--pixel-gold);
+  background: rgba(235, 220, 195, 0.9);
+  clip-path: polygon(
+    4px 0%,
+    calc(100% - 4px) 0%,
+    100% 4px,
+    100% calc(100% - 4px),
+    calc(100% - 4px) 100%,
+    4px 100%,
+    0% calc(100% - 4px),
+    0% 4px
+  );
+}
 [data-theme="medieval"] .hero-class {
-  font-family: var(--font-clean);
   color: var(--pixel-cyan);
-  letter-spacing: 0.12em;
 }
-
 [data-theme="medieval"] .greeting {
-  font-family: var(--font-clean);
   color: var(--pixel-cyan);
-  letter-spacing: 0.1em;
 }
-
-[data-theme="medieval"] .hero-name {
-  font-family: var(--font-clean);
-  letter-spacing: 0.08em;
-}
-
 [data-theme="medieval"] .name-highlight {
   background: linear-gradient(
     135deg,
@@ -486,124 +466,65 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
 [data-theme="medieval"] .bio-box {
   border-left: 4px solid var(--pixel-gold);
-  background: rgba(42, 31, 14, 0.4);
-  border-image: linear-gradient(
-      180deg,
-      var(--pixel-gold),
-      var(--pixel-gold-dark)
-    )
-    1;
+  background: rgba(200, 180, 140, 0.25);
 }
-
 [data-theme="medieval"] .stat-number {
-  font-family: var(--font-clean);
   color: var(--pixel-gold);
 }
-
 [data-theme="medieval"] .scroll-arrow {
   color: var(--pixel-gold);
 }
 
 /* ══════════════════════════════════════
-   SKILLS → GRIMOIRE / SPELLBOOK
+   SKILLS
    ══════════════════════════════════════ */
 [data-theme="medieval"] .skill-category-title {
-  font-family: var(--font-clean);
   color: var(--pixel-cyan);
   border-bottom-color: var(--pixel-border);
-  letter-spacing: 0.12em;
 }
-
 [data-theme="medieval"] .skill-name {
-  font-family: var(--font-retro);
   color: var(--pixel-white);
-  font-style: italic;
 }
-
 [data-theme="medieval"] .active-tab {
   background: var(--pixel-gold) !important;
-  color: var(--pixel-dark) !important;
-}
-
-[data-theme="medieval"] .xp-bar-wrap {
-  border-color: var(--pixel-border);
-  background: #100c05;
-  clip-path: polygon(
-    3px 0%,
-    calc(100% - 3px) 0%,
-    100% 3px,
-    100% calc(100% - 3px),
-    calc(100% - 3px) 100%,
-    3px 100%,
-    0% calc(100% - 3px),
-    0% 3px
-  );
-}
-
-[data-theme="medieval"] .xp-bar-fill {
-  background: linear-gradient(
-    90deg,
-    var(--pixel-gold-dark),
-    var(--pixel-gold),
-    var(--pixel-amber)
-  );
-  box-shadow: 0 0 8px var(--pixel-gold);
-}
-[data-theme="medieval"] .xp-bar-fill.bar-cyan {
-  background: linear-gradient(90deg, #1a4a3a, var(--pixel-cyan));
-  box-shadow: 0 0 8px var(--pixel-cyan);
-}
-[data-theme="medieval"] .xp-bar-fill.bar-green {
-  background: linear-gradient(90deg, #1a3a1a, var(--pixel-green));
-  box-shadow: 0 0 8px var(--pixel-green);
-}
-[data-theme="medieval"] .xp-bar-fill.bar-purple {
-  background: linear-gradient(90deg, #1a0a2e, var(--pixel-violet));
-  box-shadow: 0 0 8px var(--pixel-violet);
+  color: var(--pixel-darker) !important;
 }
 
 /* ══════════════════════════════════════
    PROJECTS → QUEST BOARD
    ══════════════════════════════════════ */
 [data-theme="medieval"] .project-card {
-  background: linear-gradient(145deg, #2e1e0c 0%, #1c1208 100%);
+  background: linear-gradient(
+    145deg,
+    var(--pixel-navy) 0%,
+    var(--pixel-darker) 100%
+  );
   border-color: var(--pixel-border);
 }
 [data-theme="medieval"] .project-card:hover {
   box-shadow:
-    7px 7px 0 #000,
-    0 0 20px rgba(212, 160, 23, 0.15);
+    7px 7px 0 rgba(0, 0, 0, 0.2),
+    0 0 20px rgba(154, 108, 26, 0.12);
 }
-
-[data-theme="medieval"] .origin-border--academic {
-  border-top-color: var(--pixel-gold) !important;
-}
-[data-theme="medieval"] .origin-border--work {
-  border-top-color: var(--pixel-cyan) !important;
-}
-[data-theme="medieval"] .origin-border--personal {
-  border-top-color: var(--pixel-green) !important;
-}
-
 [data-theme="medieval"] .project-title {
-  font-family: var(--font-clean);
+  color: var(--pixel-white);
 }
 [data-theme="medieval"] .project-subtitle {
-  font-family: var(--font-retro);
-  font-style: italic;
+  color: var(--pixel-cyan);
 }
 [data-theme="medieval"] .project-desc {
-  font-family: var(--font-retro);
-  font-style: italic;
+  color: var(--pixel-gray);
 }
-
 [data-theme="medieval"] .origin-tab {
-  font-family: var(--font-clean);
-  background: linear-gradient(180deg, #2e1e0c 0%, #1c1208 100%);
+  background: linear-gradient(
+    180deg,
+    var(--pixel-navy) 0%,
+    var(--pixel-darker) 100%
+  );
   border-color: var(--pixel-border);
+  color: var(--pixel-gray);
   clip-path: polygon(
     4px 0%,
     calc(100% - 4px) 0%,
@@ -615,160 +536,122 @@
     0% 4px
   );
 }
-[data-theme="medieval"] .origin-tab--active {
-  box-shadow: 2px 2px 0 #000 !important;
+[data-theme="medieval"] .active-filter {
+  background: var(--pixel-gold) !important;
+  color: var(--pixel-darker) !important;
+  box-shadow: 2px 2px 0 var(--pixel-gold-dark) !important;
 }
-
+[data-theme="medieval"] .modal-content {
+  background: linear-gradient(
+    145deg,
+    var(--pixel-navy) 0%,
+    var(--pixel-darker) 100%
+  );
+  border: 3px solid var(--pixel-border);
+  box-shadow:
+    8px 8px 0 rgba(0, 0, 0, 0.2),
+    0 0 30px rgba(154, 108, 26, 0.1);
+}
 [data-theme="medieval"] .modal-title {
-  font-family: var(--font-clean);
   color: var(--pixel-gold);
 }
 [data-theme="medieval"] .modal-subtitle {
-  font-family: var(--font-retro);
-  font-style: italic;
+  color: var(--pixel-cyan);
 }
 [data-theme="medieval"] .modal-desc {
-  font-family: var(--font-retro);
-  font-style: italic;
-  line-height: 1.9;
-}
-
-[data-theme="medieval"] .view-text {
-  font-family: var(--font-clean);
-  letter-spacing: 0.1em;
+  color: var(--pixel-white);
 }
 
 /* ══════════════════════════════════════
    CERTIFICATIONS → ROYAL DECREES
    ══════════════════════════════════════ */
 [data-theme="medieval"] .cert-card {
-  background: linear-gradient(145deg, #2e1e0c 0%, #1c1208 100%);
+  background: linear-gradient(
+    145deg,
+    var(--pixel-navy) 0%,
+    var(--pixel-darker) 100%
+  );
 }
 [data-theme="medieval"] .cert-title {
-  font-family: var(--font-clean);
-  font-size: 0.5rem;
+  color: var(--pixel-white);
 }
 [data-theme="medieval"] .cert-issuer {
-  font-family: var(--font-retro);
-  font-style: italic;
   color: var(--pixel-cyan);
 }
 [data-theme="medieval"] .cert-date {
-  font-family: var(--font-clean);
+  color: var(--pixel-gray);
 }
-
 [data-theme="medieval"] .diploma-frame {
   border-color: var(--pixel-gold);
-  background: linear-gradient(145deg, #2e1e0c, #100c05);
+  background: linear-gradient(145deg, var(--pixel-navy), var(--pixel-darker));
 }
 [data-theme="medieval"] .dp-name {
-  font-family: var(--font-clean);
   color: var(--pixel-gold);
 }
 [data-theme="medieval"] .dp-issuer {
-  font-family: var(--font-retro);
-  font-style: italic;
-}
-
-[data-theme="medieval"] .ribbon-gold {
-  background: var(--pixel-gold);
-}
-[data-theme="medieval"] .ribbon-cyan {
-  background: var(--pixel-cyan);
-}
-[data-theme="medieval"] .ribbon-purple {
-  background: var(--pixel-violet);
-}
-[data-theme="medieval"] .ribbon-green {
-  background: var(--pixel-green);
+  color: var(--pixel-cyan);
 }
 
 /* ══════════════════════════════════════
    EXPERIENCE → CHRONICLES
    ══════════════════════════════════════ */
 [data-theme="medieval"] .col-title {
-  font-family: var(--font-clean);
   color: var(--pixel-cyan);
   border-left-color: var(--pixel-cyan);
-  letter-spacing: 0.12em;
 }
-
 [data-theme="medieval"] .connector-icon {
   border-color: var(--pixel-gold);
-  background: linear-gradient(145deg, #2e1e0c, #100c05);
+  background: linear-gradient(145deg, var(--pixel-navy), var(--pixel-darker));
   box-shadow:
-    0 0 10px rgba(200, 146, 42, 0.32),
-    2px 2px 0 #000;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    0 0 10px rgba(154, 108, 26, 0.25),
+    2px 2px 0 rgba(0, 0, 0, 0.2);
 }
-
 [data-theme="medieval"] .connector-line {
   background: linear-gradient(180deg, var(--pixel-gold), var(--pixel-border));
 }
-
 [data-theme="medieval"] .item-role {
-  font-family: var(--font-clean);
   color: var(--pixel-gold);
 }
 [data-theme="medieval"] .item-company {
-  font-family: var(--font-retro);
-  font-style: italic;
   color: var(--pixel-cyan);
 }
 [data-theme="medieval"] .item-period {
-  font-family: var(--font-clean);
+  color: var(--pixel-gray);
 }
 [data-theme="medieval"] .item-desc {
-  font-family: var(--font-retro);
-  font-style: italic;
-  line-height: 1.8;
-}
-[data-theme="medieval"] .achiev-label {
-  font-family: var(--font-clean);
-}
-[data-theme="medieval"] .achiev-item {
-  font-family: var(--font-retro);
-  font-style: italic;
+  color: var(--pixel-white);
 }
 [data-theme="medieval"] .achiev-bullet {
   color: var(--pixel-gold);
 }
-
 [data-theme="medieval"] .edu-cert {
   border-color: var(--pixel-gold);
   box-shadow:
     4px 4px 0 var(--pixel-gold-dark),
-    0 0 20px rgba(212, 160, 23, 0.12);
+    0 0 15px rgba(154, 108, 26, 0.1);
 }
 
 /* ══════════════════════════════════════
-   CONTACT → MESSENGER RAVENS
+   CONTACT
    ══════════════════════════════════════ */
 [data-theme="medieval"] .info-title {
-  font-family: var(--font-clean);
   color: var(--pixel-gold);
 }
 [data-theme="medieval"] .item-label {
-  font-family: var(--font-clean);
+  color: var(--pixel-gray);
 }
 [data-theme="medieval"] .item-value {
-  font-family: var(--font-retro);
-  font-style: italic;
   color: var(--pixel-cyan);
 }
 [data-theme="medieval"] .form-title {
-  font-family: var(--font-clean);
   color: var(--pixel-gold);
 }
 [data-theme="medieval"] .field-label {
-  font-family: var(--font-clean);
+  color: var(--pixel-gray);
 }
-
 [data-theme="medieval"] .pixel-input {
-  background: linear-gradient(145deg, #1c1208, #100c05);
+  background: linear-gradient(145deg, var(--pixel-darker), var(--pixel-navy));
   border-color: var(--pixel-border);
-  font-family: var(--font-retro);
-  font-style: italic;
   color: var(--pixel-white);
   clip-path: polygon(
     4px 0%,
@@ -783,13 +666,12 @@
 }
 [data-theme="medieval"] .pixel-input:focus {
   border-color: var(--pixel-gold);
-  box-shadow: 0 0 12px rgba(212, 160, 23, 0.25);
+  box-shadow: 0 0 10px rgba(154, 108, 26, 0.2);
 }
-
 [data-theme="medieval"] .social-btn {
-  font-family: var(--font-clean);
-  background: linear-gradient(145deg, #2e1e0c, #1c1208);
+  background: linear-gradient(145deg, var(--pixel-navy), var(--pixel-darker));
   border-color: var(--pixel-border);
+  color: var(--pixel-gray);
   clip-path: polygon(
     4px 0%,
     calc(100% - 4px) 0%,
@@ -801,24 +683,18 @@
     0% 4px
   );
 }
-
 [data-theme="medieval"] .status-open {
   border-color: var(--pixel-green);
 }
 [data-theme="medieval"] .status-main {
-  font-family: var(--font-clean);
   color: var(--pixel-green);
-}
-[data-theme="medieval"] .status-sub {
-  font-family: var(--font-retro);
-  font-style: italic;
 }
 
 /* ══════════════════════════════════════
-   FOOTER → KINGDOM SEAL
+   FOOTER
    ══════════════════════════════════════ */
 [data-theme="medieval"] .pixel-footer {
-  background: linear-gradient(180deg, #100c05 0%, #0a0803 100%);
+  background: linear-gradient(180deg, var(--pixel-darker) 0%, #d8c8aa 100%);
 }
 [data-theme="medieval"] .footer-top-border {
   background: linear-gradient(
@@ -829,106 +705,52 @@
   );
 }
 [data-theme="medieval"] .footer-brand {
-  font-family: var(--font-clean);
   color: var(--pixel-gold);
 }
 [data-theme="medieval"] .footer-sub {
-  font-family: var(--font-retro);
-  font-style: italic;
+  color: var(--pixel-gray);
 }
 [data-theme="medieval"] .footer-copy {
-  font-family: var(--font-clean);
-}
-[data-theme="medieval"] .footer-built {
-  font-family: var(--font-retro);
-  font-style: italic;
+  color: var(--pixel-gray);
 }
 
 /* ══════════════════════════════════════
-   BADGE OVERRIDES
-   ══════════════════════════════════════ */
-[data-theme="medieval"] .pixel-badge {
-  font-family: var(--font-clean);
-  font-size: 0.4rem;
-  clip-path: polygon(
-    4px 0%,
-    calc(100% - 4px) 0%,
-    100% 4px,
-    100% calc(100% - 4px),
-    calc(100% - 4px) 100%,
-    4px 100%,
-    0% calc(100% - 4px),
-    0% 4px
-  );
-}
-
-/* ══════════════════════════════════════
-   DIVIDER → ILLUMINATED BORDER
-   ══════════════════════════════════════ */
-[data-theme="medieval"] .pixel-divider {
-  height: 6px;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    var(--pixel-gold-dark) 5%,
-    var(--pixel-gold) 20%,
-    var(--pixel-amber) 50%,
-    var(--pixel-gold) 80%,
-    var(--pixel-gold-dark) 95%,
-    transparent 100%
-  );
-  clip-path: polygon(
-    4px 0%,
-    calc(100% - 4px) 0%,
-    100% 50%,
-    calc(100% - 4px) 100%,
-    4px 100%,
-    0% 50%
-  );
-}
-
-/* ══════════════════════════════════════
-   BOOT SCREEN → LOADING GATE
+   BOOT SCREEN
    ══════════════════════════════════════ */
 [data-theme="medieval"] .boot-title {
-  font-family: var(--font-clean);
   color: var(--pixel-gold);
 }
 [data-theme="medieval"] .boot-subtitle {
-  font-family: var(--font-clean);
   color: var(--pixel-cyan);
 }
 [data-theme="medieval"] .boot-bar-wrap {
   border-color: var(--pixel-gold);
-  clip-path: polygon(
-    4px 0%,
-    calc(100% - 4px) 0%,
-    100% 4px,
-    100% calc(100% - 4px),
-    calc(100% - 4px) 100%,
-    4px 100%,
-    0% calc(100% - 4px),
-    0% 4px
-  );
 }
 [data-theme="medieval"] .boot-bar {
   background: linear-gradient(90deg, var(--pixel-gold-dark), var(--pixel-gold));
 }
 [data-theme="medieval"] .boot-percent {
-  font-family: var(--font-clean);
   color: var(--pixel-gold);
 }
 
 /* ══════════════════════════════════════
-   MODAL OVERRIDES
+   STAT COLOR HELPERS
    ══════════════════════════════════════ */
-[data-theme="medieval"] .modal-content {
-  background: linear-gradient(145deg, #2e1e0c 0%, #1c1208 100%);
-  border: 3px solid var(--pixel-border);
-  box-shadow:
-    8px 8px 0 #000,
-    inset 0 0 30px rgba(0, 0, 0, 0.4),
-    0 0 30px rgba(200, 146, 42, 0.12);
+[data-theme="medieval"] .color-gold {
+  color: var(--pixel-gold);
+  text-shadow: 0 0 8px rgba(154, 108, 26, 0.5);
+}
+[data-theme="medieval"] .color-cyan {
+  color: var(--pixel-cyan);
+  text-shadow: 0 0 8px rgba(42, 120, 168, 0.4);
+}
+[data-theme="medieval"] .color-purple {
+  color: var(--pixel-violet);
+  text-shadow: 0 0 8px rgba(90, 106, 170, 0.4);
+}
+[data-theme="medieval"] .color-green {
+  color: var(--pixel-green);
+  text-shadow: 0 0 8px rgba(58, 122, 42, 0.4);
 }
 
 /* ══════════════════════════════════════
@@ -937,28 +759,20 @@
 @keyframes torch-flicker {
   0%,
   100% {
-    text-shadow:
-      0 0 10px #c8922a,
-      0 0 20px #a06818;
     opacity: 1;
+    filter: brightness(1);
   }
   25% {
-    text-shadow:
-      0 0 15px #d4a03a,
-      0 0 30px #c8922a;
-    opacity: 0.88;
+    opacity: 0.9;
+    filter: brightness(1.1);
   }
   50% {
-    text-shadow:
-      0 0 8px #b87820,
-      0 0 15px #8c5c10;
     opacity: 0.95;
+    filter: brightness(0.95);
   }
   75% {
-    text-shadow:
-      0 0 20px #daa840,
-      0 0 35px #c8922a;
-    opacity: 0.9;
+    opacity: 0.88;
+    filter: brightness(1.05);
   }
 }
 
@@ -976,76 +790,4 @@
   75% {
     transform: skewX(1deg) scaleY(1.005);
   }
-}
-
-@keyframes mist-drift {
-  0% {
-    transform: translateX(-5%) translateY(0);
-    opacity: 0.3;
-  }
-  50% {
-    transform: translateX(5%) translateY(-5px);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateX(-5%) translateY(0);
-    opacity: 0.3;
-  }
-}
-
-[data-theme="medieval"] .nav-emoji {
-  animation: torch-flicker 3s ease-in-out infinite;
-}
-
-[data-theme="medieval"] .brand-cursor {
-  color: var(--pixel-gold);
-  text-shadow: 0 0 8px var(--pixel-gold);
-}
-
-/* ══════════════════════════════════════
-   OVERWORLD MAP DECORATIVE ELEMENT
-   (background village silhouette with steeple)
-   ══════════════════════════════════════ */
-
-/* ══════════════════════════════════════
-   ACTIVE FILTER (unified)
-   ══════════════════════════════════════ */
-[data-theme="medieval"] .active-filter {
-  background: var(--pixel-gold) !important;
-  color: var(--pixel-dark) !important;
-  transform: translate(2px, 2px) !important;
-  box-shadow: 2px 2px 0 var(--pixel-gold-dark) !important;
-}
-
-/* ══════════════════════════════════════
-   FOREST MIST on skills/projects BG
-   ══════════════════════════════════════ */
-[data-theme="medieval"] .projects-bg,
-[data-theme="medieval"] .contact-section {
-  background: linear-gradient(
-    180deg,
-    transparent,
-    rgba(15, 35, 10, 0.45),
-    transparent
-  );
-}
-
-/* ══════════════════════════════════════
-   STATS COLORS REMAP
-   ══════════════════════════════════════ */
-[data-theme="medieval"] .color-gold {
-  color: var(--pixel-gold);
-  text-shadow: 0 0 10px var(--pixel-gold);
-}
-[data-theme="medieval"] .color-cyan {
-  color: var(--pixel-cyan);
-  text-shadow: 0 0 10px var(--pixel-cyan);
-}
-[data-theme="medieval"] .color-purple {
-  color: var(--pixel-violet);
-  text-shadow: 0 0 10px var(--pixel-violet);
-}
-[data-theme="medieval"] .color-green {
-  color: var(--pixel-green);
-  text-shadow: 0 0 10px var(--pixel-green);
 }

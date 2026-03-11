@@ -1,5 +1,5 @@
 /* ============================================
-   CERTIFICATIONSSECTION.CSS
+   CERTIFICATIONSSECTION.CSS — Royal Decrees
    ============================================ */
 
 .active-filter {
@@ -9,7 +9,7 @@
   box-shadow: 2px 2px 0 var(--pixel-gold-dark) !important;
 }
 
-/* ── Card borders by category ── */
+/* Card border by category */
 .border-gold {
   border-color: var(--pixel-gold) !important;
 }
@@ -39,7 +39,7 @@
     0 0 20px rgba(255, 215, 0, 0.1);
 }
 
-/* ── Image area ── */
+/* Image area */
 .cert-image-wrap {
   position: relative;
   height: 180px;
@@ -57,7 +57,7 @@
   transform: scale(1.03);
 }
 
-/* ── Placeholder ── */
+/* Placeholder */
 .cert-placeholder {
   width: 100%;
   height: 100%;
@@ -83,7 +83,7 @@
   letter-spacing: 0.1em;
 }
 
-/* ── Hover overlay ── */
+/* Hover overlay */
 .cert-overlay {
   position: absolute;
   inset: 0;
@@ -101,7 +101,7 @@
   font-size: 2rem;
 }
 
-/* ── Ribbon ── */
+/* Ribbon */
 .cert-ribbon {
   position: absolute;
   top: 10px;
@@ -128,7 +128,7 @@
   color: var(--pixel-dark);
 }
 
-/* ── Card text ── */
+/* Card text */
 .cert-title {
   font-size: 0.55rem;
   color: var(--pixel-white);
@@ -154,7 +154,7 @@
   padding: 6px 10px !important;
 }
 
-/* ── Stats bar ── */
+/* Stats bar */
 .cert-stats {
   background: rgba(15, 10, 4, 0.7);
   border-top: 2px solid var(--pixel-border);
@@ -186,7 +186,7 @@
   text-shadow: 0 0 10px var(--pixel-green);
 }
 
-/* ── Empty state ── */
+/* Empty state */
 .cert-empty-icon {
   font-size: 2.5rem;
 }
@@ -236,12 +236,12 @@
   color: var(--pixel-gray);
 }
 
-/* ── Diploma frame ── */
+/* Diploma frame */
 .diploma-frame {
   border: 3px solid var(--pixel-gold);
   background: var(--pixel-darker);
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
 }
 .diploma-img {
   width: 100%;
@@ -251,7 +251,7 @@
   display: block;
 }
 
-/* ── Placeholder diploma ── */
+/* Placeholder diploma */
 .diploma-placeholder {
   padding: 3rem 2rem;
 }
@@ -312,7 +312,7 @@
   margin-top: 1rem;
 }
 
-/* ── Transitions ── */
+/* Transitions */
 .modal-fade-enter-active,
 .modal-fade-leave-active {
   transition: all 0.2s ease;
